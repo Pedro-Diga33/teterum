@@ -1,0 +1,1 @@
+{"sections":{"main":{"type":"cart-template","settings":{}},"recent-viewed-products":{"type":"recent-viewed-products","settings":{"container":"container","heading":"Vistos recientemente","limit":6,"columns":3,"column_gap":0,"enable_slider":true}}},"order":["main","recent-viewed-products"]}
