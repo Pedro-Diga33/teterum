@@ -42,6 +42,7 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
   {{ 'chunk.css' | asset_url | stylesheet_tag }}
+  {{ 'd33-stylles.css' | asset_url | stylesheet_tag }}
 
   {% render 'style-tags' %}
 
