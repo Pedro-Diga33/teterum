@@ -181,7 +181,7 @@
         "enable_flashsale": false,
         "show_countdown": false,
         "product_to_show": 4,
-        "items_per_row": 3,
+        "items_per_row": 4,
         "item_gap": 30,
         "pcard_layout": "",
         "pcard_image_ratio": "",
