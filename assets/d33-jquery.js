@@ -1,6 +1,7 @@
+const { on } = require("events");
 
 (function ($) {
-    $( window ).on( "load", function() {
-        $( ".d33-featured-collection .sf-slider__controls" ).appendTo( $( ".d33-featured-collection .section__header" ) );
-    });
+    $('.d33-featured-collection .sf-slider__controls').change(function() {
+        $(this).appendTo( $( ".d33-featured-collection .section__header" ) );
+    })
 })(jQuery);
