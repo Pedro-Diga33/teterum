@@ -206,13 +206,13 @@
     "f5c4792d-11e1-4c53-89c2-e27fc8b0a9c9": {
       "type": "d33-featured-collection",
       "settings": {
-        "heading": "D33 Featured collection",
+        "heading": "Favoritos",
         "subheading": "",
-        "description": "",
+        "description": "Estos tés son los que más gustan, algo tendrán. Haz tu pedido y descubre por qué.",
         "header_alignment": "center",
         "container": "container-fluid",
         "background_color": "rgba(0,0,0,0)",
-        "collection": "",
+        "collection": "favoritos",
         "enable_flashsale": false,
         "show_countdown": false,
         "product_to_show": 12,
