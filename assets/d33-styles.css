@@ -10,6 +10,9 @@ body .d33-featured-collection .custom-header .custom-arrow .sf-slider__controls 
     transform: translateY(50%);
 }
 @media screen and (max-width: 767px) {
+    body .d33-featured-collection .custom-header  {
+        padding: 0 10px;
+    }
     body .d33-featured-collection .custom-header .custom-arrow .sf-slider__controls {
         display: none;
     }
