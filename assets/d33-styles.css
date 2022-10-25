@@ -1,10 +1,8 @@
-body .d33-featured-collection .section__header .controls-custom,
 body .d33-featured-collection .section__header .sf-slider__controls {
     display: block;
     position: relative;
     width: fit-content;
 }
-body .d33-featured-collection .section__header .controls-custom button,
 body .d33-featured-collection .section__header .sf-slider__controls button {
     left: 0;
     position: initial;
@@ -12,7 +10,6 @@ body .d33-featured-collection .section__header .sf-slider__controls button {
     transform: translateY(50%);
 }
 @media screen and (max-width: 767px) {
-    body .d33-featured-collection .section__header .controls-custom,
     body .d33-featured-collection .section__header .sf-slider__controls {
         display: none;
     }
