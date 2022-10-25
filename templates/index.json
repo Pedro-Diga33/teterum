@@ -210,7 +210,7 @@
         "subheading": "",
         "description": "Estos tés son los que más gustan, algo tendrán. Haz tu pedido y descubre por qué.",
         "header_alignment": "center",
-        "container": "container-fluid",
+        "container": "w-full",
         "background_color": "rgba(0,0,0,0)",
         "collection": "favoritos",
         "enable_flashsale": false,
