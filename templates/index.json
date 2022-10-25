@@ -95,7 +95,7 @@
         "button_text": "",
         "button_style": "sf__btn-primary",
         "button_size": "",
-        "infinite_load": false,
+        "infinite_load": true,
         "max_page_load": 3,
         "use_scroll_mobile": true,
         "item_gap_mobile": 16,
