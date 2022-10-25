@@ -110,8 +110,12 @@
           </a>
         </div>
       {% else %}
-        {% render 'd33-index-section-header', section_settings: section.settings %}
-        {% render 'slider-controls', custom_class: custom_class, absolute: true, container: section.settings.container, show_pagination: section.settings.show_pagination, show_nav: section.settings.show_navigation %}
+        <div class="custom-header d-flex flex-column">
+          {% render 'd33-index-section-header', section_settings: section.settings %}
+          <div class="custom-arrow">
+            {% render 'slider-controls', custom_class: custom_class, absolute: true, container: section.settings.container, show_pagination: section.settings.show_pagination, show_nav: section.settings.show_navigation %}
+          </div>
+        </div>
       {% endif %}
       <div class="{% if infinite_load == false and can_load == false %}sf__ms{% endif %}{% if enable_slider %} sf__ms--slider{% endif %}{% unless use_scroll_mobile %} sf__ms--mb-grid{% endunless %}">
         <div
