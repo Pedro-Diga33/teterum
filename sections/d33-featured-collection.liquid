@@ -110,9 +110,15 @@
           </a>
         </div>
       {% else %}
-        <div class="custom-header d-flex flex-column">
+        <div class="custom-header">
           {% render 'd33-index-section-header', section_settings: section.settings %}
           <div class="custom-arrow">
+            {%- liquid 
+              assign custom_class = 'hidden'
+              if section.settings.show_pagination or section.settings.show_navigation
+                assign custom_class = 'hidden pb-5 lg:pb-0'
+              endif
+            -%}
             {% render 'slider-controls', custom_class: custom_class, absolute: true, container: section.settings.container, show_pagination: section.settings.show_pagination, show_nav: section.settings.show_navigation %}
           </div>
         </div>
@@ -149,7 +155,7 @@
             {% endif %}
             {% if enable_slider == true %}</div> <!-- End .swiper-wrapper -->{% endif %}
         </div>
-        {% if enable_slider %}
+        {% comment %} {% if enable_slider %}
           {%- liquid 
 						assign custom_class = 'hidden'
           	if section.settings.show_pagination or section.settings.show_navigation
@@ -157,7 +163,7 @@
           	endif
 					-%}
           {% render 'slider-controls', custom_class: custom_class, absolute: true, container: section.settings.container, show_pagination: section.settings.show_pagination, show_nav: section.settings.show_navigation %}
-        {% endif %}
+        {% endif %} {% endcomment %}
       </div>
       {% if section.settings.button_text != blank %}
         {% capture btn_class %}sf__btn {{ section.settings.button_style }} {{ section.settings.button_size }}{% endcapture %}
