@@ -3,10 +3,9 @@
 {% endif %}
 
 {% if container == 'w-full' %}
-    {% assign show_nav = false %}
+    {% assign show_nav = true %}
 {% endif %}
-{% comment %} {% if container == 'w-full' %} sf-slider__controls--full{% endif %}  {% endcomment %}
-<div class="sf-slider__controls flex items-center justify-center mt-5 md:mt-0 -mx-2{% if absolute == true %} sf-slider__controls--absolute{% endif %} {{ custom_class }}"{% if show_pagination %} style="--nav-offset: 25px"{% endif %}>
+<div class="sf-slider__controls flex items-center justify-center mt-5 md:mt-0 -mx-2{% if absolute == true %} sf-slider__controls--absolute{% endif %}{% if container == 'w-full' %} sf-slider__controls--full{% endif %} {{ custom_class }}"{% if show_pagination %} style="--nav-offset: 25px"{% endif %}>
     {% if show_nav %}
     <button class="sf-slider__controls-button swiper-button-prev sf-slider__controls-prev border sm:hover:border-black rounded-full cursor-pointer mx-2 {{ nav_class }}">
         <svg width="14px" height="14px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M229.9 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L94.569 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H94.569l155.13-155.13c4.686-4.686 4.686-12.284 0-16.971L229.9 38.101c-4.686-4.686-12.284-4.686-16.971 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971L212.929 473.9c4.686 4.686 12.284 4.686 16.971-.001z"/></svg>
