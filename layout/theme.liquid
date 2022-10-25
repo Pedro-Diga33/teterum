@@ -42,18 +42,18 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
   {{ 'chunk.css' | asset_url | stylesheet_tag }}
-  {{ 'd33-styles.css' | asset_url | stylesheet_tag }}
+  {% comment %} {{ 'd33-styles.css' | asset_url | stylesheet_tag }} {% endcomment %}
   
 
   {% render 'style-tags' %}
 
-  <script src="{{ 'jquery.js' | asset_url }}" defer="defer"></script>
   
   <script src="{{ 'theme-global.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'lazy-image.min.js' | asset_url }}" defer="defer"></script>
 
-  <script src="{{ 'd33-jquery.js' | asset_url }}" defer="defer"></script>
+  {% comment %} <script src="{{ 'jquery.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'd33-jquery.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 
 
   {{ content_for_header }}
