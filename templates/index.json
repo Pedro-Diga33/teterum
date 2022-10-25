@@ -766,7 +766,7 @@
         "product_to_show": 12,
         "items_per_row": 3,
         "item_gap": 30,
-        "pcard_layout": "",
+        "pcard_layout": "4",
         "pcard_image_ratio": "",
         "show_vendor": false,
         "hide_title": false,
