@@ -168,41 +168,6 @@
         "custom_class": ""
       }
     },
-    "56648925-1285-47f6-b11e-c7930147fa8f": {
-      "type": "d33-featured-collection",
-      "settings": {
-        "heading": "D33 Featured collection",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "left",
-        "container": "w-full",
-        "background_color": "rgba(0,0,0,0)",
-        "collection": "",
-        "enable_flashsale": false,
-        "show_countdown": false,
-        "product_to_show": 12,
-        "items_per_row": 3,
-        "item_gap": 30,
-        "pcard_layout": "",
-        "pcard_image_ratio": "",
-        "show_vendor": false,
-        "hide_title": false,
-        "enable_slider": true,
-        "show_pagination": false,
-        "show_navigation": true,
-        "button_type": "link",
-        "button_text": "",
-        "button_style": "sf__btn-primary",
-        "button_size": "",
-        "infinite_load": false,
-        "max_page_load": 3,
-        "use_scroll_mobile": true,
-        "item_gap_mobile": 16,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_class": ""
-      }
-    },
     "500867db-e47e-457f-931d-843f2bf7bcaf": {
       "type": "d33-featured-collection",
       "settings": {
@@ -790,7 +755,6 @@
   "order": [
     "1621243260e1af0c20",
     "16225316461d1cff80",
-    "56648925-1285-47f6-b11e-c7930147fa8f",
     "500867db-e47e-457f-931d-843f2bf7bcaf",
     "0378bc53-d31a-49e9-941e-0d3ea20443b5",
     "0d528ee4-bb46-44d4-a477-4d0468a42727",
