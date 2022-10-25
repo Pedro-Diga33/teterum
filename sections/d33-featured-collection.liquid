@@ -86,7 +86,7 @@
   >
     <div class="{{ section.settings.container }}{% if has_bg == false %} section-my{% else %} section-py{% endif %} d33-featured-collection collection-list__inner">
       {% if enable_flashsale and show_countdown %}
-        <div class="section__header flex justify-between items-end {% if enable_slider %} sf__ms--slider{% endif %}">
+        <div class="section__header flex justify-between items-end">
           <h2 class="section__heading">
             <a href="{{ current_collection.url }}">{{ section.settings.heading }}</a>
           </h2>
@@ -108,15 +108,8 @@
               </div>
             </div>
           </a>
-          {% if enable_slider %}
-            {%- liquid 
-              assign custom_class = 'hidden'
-              if section.settings.show_pagination or section.settings.show_navigation
-                assign custom_class = 'hidden pb-5 lg:pb-0'
-              endif
-            -%}
-            {% render 'slider-controls', custom_class: custom_class, absolute: true, container: section.settings.container, show_pagination: section.settings.show_pagination, show_nav: section.settings.show_navigation %}
-          {% endif %}
+          <div class="controls-custom">
+          </div>
         </div>
       {% else %}
         {% render 'index-section-header', section_settings: section.settings %}
