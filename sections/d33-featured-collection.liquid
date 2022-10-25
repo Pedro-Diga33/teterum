@@ -1,5 +1,4 @@
 {{ 'featured-collection.css' | asset_url | stylesheet_tag }}
-{{ 'd33-featured-collection.css' | asset_url | stylesheet_tag }}
 {%- comment -%}
   This is a required section for the Shopify Theme Store.
   It is available in the "Featured Collection" section in the theme editor.
@@ -85,7 +84,7 @@
           --section-padding-bottom: {{ section.settings.padding_bottom }}px;
           "
   >
-    <div class="{{ section.settings.container }}{% if has_bg == false %} section-my{% else %} section-py{% endif %}">
+    <div class="{{ section.settings.container }}{% if has_bg == false %} section-my{% else %} section-py{% endif %} d33-featured-collection">
       {% if enable_flashsale and show_countdown %}
         <div class="section__header flex justify-between items-end">
           <h2 class="section__heading">
