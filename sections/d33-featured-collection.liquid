@@ -86,7 +86,7 @@
   >
     <div class="{{ section.settings.container }}{% if has_bg == false %} section-my{% else %} section-py{% endif %} d33-featured-collection collection-list__inner">
       {% if enable_flashsale and show_countdown %}
-        <div class="section__header flex justify-between items-end">
+        <div class="section__header flex justify-between items-end {% if enable_slider %} sf__ms--slider{% endif %}">
           <h2 class="section__heading">
             <a href="{{ current_collection.url }}">{{ section.settings.heading }}</a>
           </h2>
