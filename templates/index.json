@@ -69,76 +69,6 @@
         "custom_class": "heroSlider"
       }
     },
-    "c2b2f770-918b-491f-bdf9-f8e29208dfa4": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-0": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-1": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-2": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-3": {
-          "type": "banner",
-          "settings": {
-            "collection": "",
-            "title": "New season in town",
-            "description": "Claritas est etiam processus dynamicus qui sequitur.",
-            "item_bg": "#000",
-            "item_text_color": "#fff"
-          }
-        }
-      },
-      "block_order": [
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-0",
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-1",
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-2",
-        "template--16672375439584__c2b2f770-918b-491f-bdf9-f8e29208dfa4-16667123183700033c-3"
-      ],
-      "settings": {
-        "heading": "Shop by collections",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "left",
-        "container": "w-full",
-        "background_color": "",
-        "layout": "left-side",
-        "card_style": "standard",
-        "text_alignment": "left",
-        "hover_effect": "scaling-down",
-        "show_product_count": true,
-        "count_inline_title": true,
-        "image_rounded": false,
-        "items_per_row": 4,
-        "item_gap": 30,
-        "enable_slider": false,
-        "show_pagination": false,
-        "show_navigation": false,
-        "autorotate": false,
-        "autorotate_speed": 5,
-        "use_scroll_mobile": true,
-        "mobile_gap": 10,
-        "hidden_slide_control_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_class": ""
-      }
-    },
     "d551687b-d676-42b0-8de7-27fd52202511": {
       "type": "d33-featured-collection",
       "settings": {
@@ -725,7 +655,6 @@
   },
   "order": [
     "1621243260e1af0c20",
-    "c2b2f770-918b-491f-bdf9-f8e29208dfa4",
     "d551687b-d676-42b0-8de7-27fd52202511",
     "0378bc53-d31a-49e9-941e-0d3ea20443b5",
     "0d528ee4-bb46-44d4-a477-4d0468a42727",
