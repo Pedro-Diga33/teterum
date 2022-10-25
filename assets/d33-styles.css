@@ -1,3 +1,19 @@
-body .d33-featured-collection {
-    
+body .d33-featured-collection .sf-slider__controls {
+    display: none;
+}
+body .d33-featured-collection .section__header .sf-slider__controls {
+    display: block;
+    position: relative;
+    width: fit-content;
+}
+body .d33-featured-collection .section__header .sf-slider__controls button{
+    left: 0;
+    position: initial;
+    top: 0;
+    transform: translateY(50%);
+}
+@media screen and (max-width: 767px) {
+    body .d33-featured-collection .section__header .sf-slider__controls {
+        display: none;
+    }
 }
