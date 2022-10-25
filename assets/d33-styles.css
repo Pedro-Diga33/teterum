@@ -17,16 +17,16 @@ body .d33-featured-collection .custom-header .custom-arrow .sf-slider__controls 
 }
 
 
-.collection-list__inner {
+body .d33-featured-collection .collection-list__inner {
     padding-left: 1rem;
 }
 @media (min-width: 1024px) {
-    .collection-list__inner {
+    body .d33-featured-collection .collection-list__inner {
         padding-left: calc(var(--fluid-container-offset, 6rem) / 1.25);
     }
 }
 @media (min-width: 1750px) {
-    .collection-list__inner {
+    body .d33-featured-collection  .collection-list__inner {
         padding-left: calc((100vw - 1620px)/ 2);
     }
 }
