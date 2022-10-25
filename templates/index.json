@@ -223,7 +223,7 @@
         "show_vendor": false,
         "hide_title": false,
         "enable_slider": true,
-        "show_pagination": true,
+        "show_pagination": false,
         "show_navigation": true,
         "button_type": "link",
         "button_text": "",
