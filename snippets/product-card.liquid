@@ -478,6 +478,13 @@
 
             <div class="momento">
 
+              {% for product in collections['color_tag'].products %}
+                {{- product.title | link_to: product.url }}
+                <script>console.log({{ product | json }});</script>
+              {% endfor %}
+
+              
+
               {% for product in product.collections %}
                 <a href="{{ product.url }}" class="" style="color: ; ">
                   {{ product.title }}
