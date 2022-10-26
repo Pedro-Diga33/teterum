@@ -483,7 +483,8 @@
                   {{ product.title }}
                 </a>
               {% endfor %}
-              <script>console.log({{ product.metafields | json }});</script>
+              <script>console.log({{ product | json }});</script>
+              <script>console.log({{ products | json }});</script>
               <script>console.log({{ product.collections | json }});</script>
             </div>
             {% if show_title == true %}
