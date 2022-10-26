@@ -489,7 +489,7 @@
                 <a href="{{ product.url }}" class="" style="color: ; ">
                   {{ product.title }}
                 </a>
-                <script>console.log({{ product | json }});</script>
+                {% comment %} <script>console.log({{ product | json }});</script> {% endcomment %}
               {% endfor %}
 
             </div>
