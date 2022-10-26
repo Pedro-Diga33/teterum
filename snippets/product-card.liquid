@@ -52,6 +52,8 @@
 
   assign sold_number = product.metafields.foxkit.sold_number
 
+  assign momentos = product.metafields.custom.momento 
+
   if product.available 
     assign variant_id = product.first_available_variant.id
   else 
@@ -478,13 +480,9 @@
 
             <div class="momento">
 
-            
-              {% assign momentos = product.metafields.custom.momento %}
-              {% for momento in momentos %}
-
-                <p>{{ momento.title }}</p>
-
-              {% endfor %}
+              <script>console.log({{ sold_number | json }});</script>
+              
+              <script>console.log({{ momentos | json }});</script>
 
               {% comment %} <script>console.log({{ collections | json }});</script>
               <script>console.log({{ product | json }});</script> {% endcomment %}
