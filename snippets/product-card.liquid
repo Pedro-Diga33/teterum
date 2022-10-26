@@ -479,12 +479,12 @@
             <div class="momento">
 
               <script>console.log({{ product.metafields.custom.momento | json }});</script>
-
+              {{ product.metafields.custom.momento | json }}
               {% for product in product.collections %}
                 <a href="{{ product.url }}" class="" style="color: ; ">
                   {{ product.title }}
                 </a>
-                <script>console.log({{ product | json }});</script>
+                
               {% endfor %}
 
             </div>
