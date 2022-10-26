@@ -481,9 +481,6 @@
               {% for product in product.collections %}
                 {{- product.title | link_to: product.url }}
               {% endfor %}
-              {% for product in product.metafields.custom.momento %}
-                {{- product.title | link_to: product.url }}
-              {% endfor %}
            
             </div>
             {% if show_title == true %}
