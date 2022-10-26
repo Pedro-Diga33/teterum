@@ -478,10 +478,17 @@
 
             <div class="momento">
               {{ product.metafields.custom.momento }}
-              {{ product.collections.title }}
-              {{ product.collection.title }}
-              {{ collection.title }}
-              {{ collections.title }}
+
+              {%- if collection.products.size > 0 -%}
+                The '{{ collection.title }}' collection contains the following types of products:
+                
+                {% for type in collection.all_types -%}
+                  {% unless type == blank -%}
+                    - {{ type }}
+                  {%- endunless -%}
+                {%- endfor %}
+                {%- endif -%}
+                
             </div>
 
             {% if show_title == true %}
