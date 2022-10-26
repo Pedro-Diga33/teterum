@@ -477,15 +477,13 @@
 
 
             <div class="momento">
-              {{ product.metafields.custom.momento }}
-              {{ product.collections }}
-
+              
               {% for product in product.collections %}
                 {{- product.title | link_to: product.url }}
               {% endfor %}
-
-              <script>console.log({{ product | json }});</script>
-              <script>console.log({{ product.collections | json }});</script>
+              {% for product in product.metafields.custom.momento %}
+                {{- product.title | link_to: product.url }}
+              {% endfor %}
            
             </div>
             {% if show_title == true %}
