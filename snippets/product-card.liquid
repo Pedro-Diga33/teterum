@@ -478,9 +478,11 @@
 
             <div class="momento">
 
-              <script>console.log({{ product.collection_title | json }});</script>
-              <script>console.log({{ collections | json }});</script>
-              <script>console.log({{ product | json }});</script>
+              <script>console.log({{ product.collections | json }});</script>
+              <script>console.log({{ product.collection | json }});</script>
+
+              {% comment %} <script>console.log({{ collections | json }});</script>
+              <script>console.log({{ product | json }});</script> {% endcomment %}
 
               {% for collection in collection %}
                 {{- collection.title | link_to: collection.url }}
