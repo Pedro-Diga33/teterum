@@ -480,8 +480,8 @@
                   {{ product.title }}
                 </a>
               </h3>
-              {% for product in collections['momento'].products %}
-                {{- product.title | link_to: product.url }}
+              {% for collection in collections %}
+                {{- collection.title | link_to: collection.url }}
               {% endfor %}
               <h4 class="block text-base">{{ product.metafields.descriptors.subtitle }}</h4>
               <p class="block text-base">{{ product.metafields.custom.short_description }}</p>
