@@ -478,21 +478,8 @@
 
             <div class="momento">
               {{ product.metafields.custom.momento }}
-              {%- assign collection = collections[block.settings.collection] -%}
-              <a  href="{{ collection.url | default: "#" }}"
-                class="grid group items-center overflow-hidden w-full"
-                style="--aspect-ratio: {{ first_ratio | default: '3/4' }}"
-            >
-                <div>
-                    <div class="relative grid h-full w-full p-4 py-8 text-center" style="background: {{ block.settings.item_bg }}">
-                        <h3 class="text-2xl md:text-4xl self-end" style="color: {{ block.settings.item_text_color }}">{{ block.settings.title }}</h3>
-                        <p class="self-end" style="color: {{ block.settings.item_text_color }}">{{ block.settings.description }}</p>
-                    </div>
-                </div>
-            </a>
-            
-            </div>
 
+              
             {% if show_title == true %}
               <h3 class="block">
                 <a href="{{ product.url }}" class="block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary{% if settings.uppercase_prd_name %} uppercase{% endif %}">
