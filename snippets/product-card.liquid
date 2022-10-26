@@ -478,9 +478,10 @@
 
             <div class="momento">
               {{ product.metafields.custom.momento }}
-              {{ product.collections.title }}
+              {{ collections.title }}
 
               <script>console.log({{ product.collections | json }});</script>
+              <script>console.log({{ collections.title | json }});</script>
            
             </div>
             {% if show_title == true %}
