@@ -477,8 +477,8 @@
 
 
             <div class="momento">
-              {% for product in product.metafields.custom.momento %}
-                {{- product.title | link_to: product.url }}
+              {% for collection in collections %}
+                {{- collection.title | link_to: collection.url }}
               {% endfor %}
             </div>
 
