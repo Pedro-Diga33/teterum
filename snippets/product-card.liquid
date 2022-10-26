@@ -480,9 +480,9 @@
                   {{ product.title }}
                 </a>
               </h3>
-              {% for collection in collections %}
-                {{- collection.title | link_to: collection.url }}
-              {% endfor %}
+              {% for location in product.metafields.information.pickup_locations.momento -%}
+                {{ location }}
+              {%- endfor %}
               <h4 class="block text-base">{{ product.metafields.descriptors.subtitle }}</h4>
               <p class="block text-base">{{ product.metafields.custom.short_description }}</p>
             {% endif %}
