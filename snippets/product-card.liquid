@@ -479,19 +479,16 @@
             <div class="momento">
 
 
-              <script>console.log({{ variant | json }});</script>
-              {% comment %} <script>console.log({{ collections | json }});</script>
-              <script>console.log({{ product | json }});</script> {% endcomment %}
+              {% comment %} 
+                <script>console.log({{ collections | json }});</script>
+              {% endcomment %}
 
-              {% for collection in collection %}
-                {{- collection.title | link_to: collection.url }}
-              {% endfor %}
 
-              {% comment %} {% for product in product.collections %}
+              {% for product in product.collections %}
                 <a href="{{ product.url }}" class="" style="color: ; ">
                   {{ product.title }}
                 </a>
-              {% endfor %} {% endcomment %}
+              {% endfor %}
 
             </div>
             {% if show_title == true %}
