@@ -483,9 +483,11 @@
                   {{ product.title }}
                 </a>
               {% endfor %}
-              <script>console.log({{ product | json }});</script>
-              <script>console.log({{ products | json }});</script>
-              <script>console.log({{ product.collections | json }});</script>
+
+              {% for product in product.metafields %}
+                <script>console.log({{ product | json }});</script>
+              {% endfor %}
+
             </div>
             {% if show_title == true %}
               <h3 class="block">
