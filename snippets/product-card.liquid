@@ -474,15 +474,17 @@
             {%- if show_vendor -%}
               <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
             {%- endif -%}
+
+            {% for location in product.metafieldscustom.momento.value -%}
+              {{ location }}
+            {%- endfor %}
+
             {% if show_title == true %}
               <h3 class="block">
                 <a href="{{ product.url }}" class="block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary{% if settings.uppercase_prd_name %} uppercase{% endif %}">
                   {{ product.title }}
                 </a>
               </h3>
-              {% for location in product.metafields.information.pickup_locations.momento -%}
-                {{ location }}
-              {%- endfor %}
               <h4 class="block text-base">{{ product.metafields.descriptors.subtitle }}</h4>
               <p class="block text-base">{{ product.metafields.custom.short_description }}</p>
             {% endif %}
