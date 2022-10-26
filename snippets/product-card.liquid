@@ -478,9 +478,11 @@
 
             <div class="momento">
               
+
               {% for product in product.collections %}
                 {{- product.title | link_to: product.url }}
               {% endfor %}
+              <script>console.log({{ product.collections | json }});</script>
            
             </div>
             {% if show_title == true %}
