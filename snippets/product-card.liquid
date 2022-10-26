@@ -475,7 +475,12 @@
               <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
             {%- endif -%}
 
-            <div class="momento">{{ product.metafields.custom.momento.key }}</div>
+
+            <div class="momento">
+              {% for product in collections['momento'].products %}
+                {{- product.title | link_to: product.url }}
+              {% endfor %}
+            </div>
 
             {% if show_title == true %}
               <h3 class="block">
