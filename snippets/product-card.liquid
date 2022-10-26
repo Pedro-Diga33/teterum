@@ -477,11 +477,7 @@
 
 
             <div class="momento">
-              {{ product.metafields.custom.momento }}
-
-              {% for product in product.metafields.custom.momento %}
-                {{- product.title | link_to: product.url }}
-              {% endfor %}
+              {% render 'collection-card', section: section, collection: collection, card_style: card_style, text_alignment: section.settings.text_alignment, image: block.settings.item_image, show_product_count: section.settings.show_product_count, enable_slider: enable_slider, image_rounded: section.settings.image_rounded, hover_effect: section.settings.hover_effect, title: block.settings.title %}
 
             </div>
 
