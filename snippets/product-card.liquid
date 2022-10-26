@@ -478,8 +478,8 @@
 
             <div class="momento">
 
-              <script>console.log({{ collection | json }});</script>
-              <script>console.log({{ product_option | json }});</script>
+              <script>console.log({{ collections | json }});</script>
+              <script>console.log({{ product | json }});</script>
 
               {% for collection in collection %}
                 {{- collection.title | link_to: collection.url }}
