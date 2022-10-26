@@ -478,7 +478,7 @@
 
             <div class="momento">
               {{ product }}
-              <script>console.log({{ product }});</script>
+              <script>console.log({{ product | json }});</script>
             </div>
             {% if show_title == true %}
               <h3 class="block">
