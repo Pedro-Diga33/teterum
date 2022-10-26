@@ -479,7 +479,7 @@
             <div class="momento">
 
 
-              <script>console.log({{ product.metafields.custom | json }});</script>
+              <script>console.log({{ product.metafields.custom['momento'] | json }});</script>
 
 
               {% for product in product.collections %}
