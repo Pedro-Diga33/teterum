@@ -479,7 +479,7 @@
             <div class="momento">
               {% for product in product.collections %}
 
-                <a href="{{ product.url }}" class="  {{ product.color_tag }} ">
+                <a href="{{ product.url }}" class="" style="color: {{ collection.metafields.custom.color_tag }}; ">
                   {{ product.title }}
                 </a>
               {% endfor %}
