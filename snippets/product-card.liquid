@@ -478,10 +478,10 @@
 
             <div class="momento">
 
-              <script>console.log({{ product.metafields | json }});</script>
-              <script>console.log({{ product.metafields.momento | json }});</script>
+              <script>console.log({{ products.metafields | json }});</script>
+              <script>console.log({{ products.metafields.momento | json }});</script>
 
-              {% for collection in product.metafields %}
+              {% for collection in products.metafields %}
                 {{- collection.title | link_to: collection.url }}
               {% endfor %}
 
