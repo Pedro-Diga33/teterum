@@ -478,7 +478,12 @@
 
             <div class="momento">
 
-              <script>console.log({{ collection.metafields.custom.color_tag | json }});</script>
+             
+
+              {% for collection in collection.metafields.custom.color_tag %}
+
+                <script>console.log({{ collection | json }});</script>
+              {% endfor %}
 
               {% for product in product.collections %}
 
