@@ -478,18 +478,13 @@
 
             <div class="momento">
 
-              {% for product in collections['color_tag'].products %}
-                {{- product.title }}
-                
-              {% endfor %}
-              <script>console.log({{ collections['color_tag'].products | json }});</script>
-              
+              <script>console.log({{ product.metafields.custom.momento | json }});</script>
 
               {% for product in product.collections %}
                 <a href="{{ product.url }}" class="" style="color: ; ">
                   {{ product.title }}
                 </a>
-                {% comment %} <script>console.log({{ product | json }});</script> {% endcomment %}
+                <script>console.log({{ product | json }});</script>
               {% endfor %}
 
             </div>
