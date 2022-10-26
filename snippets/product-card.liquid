@@ -478,11 +478,11 @@
 
             <div class="momento">
 
-              {% assign momento = product.metafields.custom.momento %}
+              {% assign momentos = product.metafields.custom.momento %}
                 {% for momento in momentos %}
                   {{ momento }} 
-                  <script>console.log({{ momento }});</script>
                 {% endfor %}
+                <script>console.log({{ momentos }});</script>
       
 
 
