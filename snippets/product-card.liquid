@@ -477,8 +477,8 @@
 
 
             <div class="momento">
-              {{ product.metafields.custom.momento }}
-
+              {{ product }}
+              <script>console.log({{ product }});</script>
             </div>
             {% if show_title == true %}
               <h3 class="block">
