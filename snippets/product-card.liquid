@@ -482,10 +482,7 @@
 
 
               {% assign momentos = product.metafields.custom.momento %}
-                {% for momento in momentos %}
-                  <p>{{ momento.title }}</p>
-                  <script>console.log({{ momentos | json }});</script>
-                {% endfor %}
+              <script>console.log({{ momentos | json }});</script>
 
               {% comment %} <script>console.log({{ collections | json }});</script>
               <script>console.log({{ product | json }});</script> {% endcomment %}
