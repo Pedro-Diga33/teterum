@@ -479,9 +479,7 @@
             <div class="momento">
 
 
-              {% comment %} 
-                <script>console.log({{ collections | json }});</script>
-              {% endcomment %}
+              <script>console.log({{ product.metafields.custom | json }});</script>
 
 
               {% for product in product.collections %}
