@@ -477,15 +477,12 @@
 
 
             <div class="momento">
-              {% assign collection = collections[block.settings.collection] %}
-              
-              <script>console.log({{ product.collection | json }});</script>
-
               {% for product in product.collections %}
-                {{- product.title | link_to: product.url }}
+                <a href="{{ product.url }}" class="asd">
+                  {{ product.title }}
+                </a>
               {% endfor %}
               <script>console.log({{ product.collections | json }});</script>
-           
             </div>
             {% if show_title == true %}
               <h3 class="block">
