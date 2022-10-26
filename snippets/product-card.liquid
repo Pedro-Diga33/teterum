@@ -479,9 +479,8 @@
             <div class="momento">
               {{ product.metafields.custom.momento }}
 
-              {% for product in product.metafields.custom.momento %}
-                  {{ product.collections[0] }}
-                {% endfor %}
+              <script>console.log({{ product.metafields.custom.momento | json }});</script>
+           
             </div>
             {% if show_title == true %}
               <h3 class="block">
