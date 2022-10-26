@@ -478,8 +478,8 @@
 
             <div class="momento">
 
-
-              <script>console.log({{ product.metafields.custom['momento'] | json }});</script>
+              {% assign momento = product.metafields.custom %}
+              <script>console.log({{ momento | json }});</script>
 
 
               {% for product in product.collections %}
