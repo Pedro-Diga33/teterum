@@ -478,8 +478,8 @@
 
             <div class="momento">
 
-              <script>console.log({{ product.collections | json }});</script>
-              <script>console.log({{ product.collection | json }});</script>
+              <script>console.log({{ product.metafields.collections | json }});</script>
+              <script>console.log({{ product.metafields.collection | json }});</script>
 
               {% comment %} <script>console.log({{ collections | json }});</script>
               <script>console.log({{ product | json }});</script> {% endcomment %}
