@@ -477,12 +477,13 @@
 
 
             <div class="momento">
-              
+
               {% for product in product.collections %}
-                <a href="{{ product.url }}" class="" style="color: {{ settings.color_tag }}; ">
+                <a href="{{ product.url }}" class="" style="color: ; ">
                   {{ product.title }}
                 </a>
-                <script>console.log({{ settings | json }});</script>
+                <script>console.log({{ product.metafields.custom.color_tag | json }});</script>
+                <script>console.log({{ collection.metafields.custom.color_tag | json }});</script>
               {% endfor %}
 
             </div>
