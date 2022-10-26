@@ -21,7 +21,7 @@
         "c97dd082-924f-4410-b721-1918f4b36e6e": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ product.metafields.custom.momento}}"
+            "custom_liquid": "{{ product.collections }}"
           }
         },
         "e0bb5540-9735-48b0-ad6c-1cb992dd23ce": {
