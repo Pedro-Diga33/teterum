@@ -480,9 +480,11 @@
 
             
 
-              {% assign suppliers = product.metafields.custom.momento %}
-                {% for supplier in suppliers %}
-                  <p>{{ supplier.title }}</p>
+
+              {% assign momentos = product.metafields.custom.momento %}
+                {% for momento in momentos %}
+                  <p>{{ momento.title }}</p>
+                  <script>console.log({{ momentos | json }});</script>
                 {% endfor %}
 
               {% comment %} <script>console.log({{ collections | json }});</script>
