@@ -475,9 +475,7 @@
               <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
             {%- endif -%}
 
-            {% for location in product.metafields.custom.momento.value -%}
-              {{ location }}
-            {%- endfor %}
+            <div class="momento">{{ product.metafields.custom.momento }}</div>
 
             {% if show_title == true %}
               <h3 class="block">
