@@ -478,9 +478,6 @@
 
             <div class="momento">
 
-
-              <script>console.log({{ product.metafields.custom | json }});</script>
-
               {% assign momentos = product.metafields.custom.momento %}
               {% for momento in momentos %}
                 {{ momento }} 
@@ -495,12 +492,6 @@
                 {{ product.title }}
               </a>
             {% endfor %}
-
-              {% for product in product.collections %}
-                <a href="{{ product.url }}" class="" style="color: ; ">
-                  {{ product.title }}
-                </a>
-              {% endfor %}
 
             </div>
             {% if show_title == true %}
