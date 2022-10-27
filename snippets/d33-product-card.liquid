@@ -474,15 +474,6 @@
             {%- if show_vendor -%}
               <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
             {%- endif -%}
-            <div>
-              {% for collection in product.collections %}
-                  {% if collection.metafields.custom.color_tag != blank %} 
-                    <a href="{{collection.url}}" style="border: 1px solid {{ collection.metafields.custom.color_tag }}">
-                      {{ collection.title }}
-                    </a>
-                  {% endif %}
-              {% endfor %}
-            </div>
             {% if show_title == true %}
               <h3 class="block">
                 <a href="{{ product.url }}" class="block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary{% if settings.uppercase_prd_name %} uppercase{% endif %}">
