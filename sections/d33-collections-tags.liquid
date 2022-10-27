@@ -1,0 +1,7 @@
+{% for collection in product.collections %}
+    {% if collection.metafields.custom.color_tag != blank %} 
+      <a href="{{ collection.url }}" class="hover:text-black" style="color: {{ collection.metafields.custom.color_tag }}">
+        {{ collection.title }}{%- if forloop.last != true -%}, {%- endif -%}
+      </a>
+    {% endif %}
+{% endfor %}

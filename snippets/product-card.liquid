@@ -477,22 +477,26 @@
 
 
             <div class="momento">
+              
+              {% comment %}
+                {% assign momentos = product.metafields.custom %}
+                <script>console.log({{ momentos | json }});</script>
+                <script>console.log({{ momentos.momento }});</script>
+              
+            
+                <script>console.log({{ momentos.momento }});</script>
+                <script>console.log({{ settings | json  }});</script> 
+        
 
-              {% assign momentos = product.metafields.custom.momento %}
-              {% for momento in momentos %}
-                {{ momento }} 
-              {% endfor %}
-             
-              <script>console.log({{ momentos }});</script>
-    
-
-
-            {% for product in product.collections %}
-              <a href="{{ product.url }}" class="" style="color: ; ">
-                {{ product.title }}
-              </a>
-            {% endfor %}
-
+                {{ product.metafields.custom.momento }}
+              {% endcomment %}
+              {% for collection in product.collections %}
+                {% if collection.metafields.custom.color_tag != blank %} 
+                  <a href="{{ collection.url }}" class="hover:text-black" style="color: {{ collection.metafields.custom.color_tag }}">
+                    {{ collection.title }}{%- if forloop.last != true -%}, {%- endif -%}
+                  </a>
+                  {% endif %}
+                  {% endfor %}
             </div>
             {% if show_title == true %}
               <h3 class="block">
