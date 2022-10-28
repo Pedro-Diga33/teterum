@@ -82,6 +82,24 @@
     
 }
 
+.custom-collection {
+  margin-bottom: 12px;
+}
+
+.badge-collection {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 42px;
+  padding: 8px 16px;
+  display: block;
+  margin-right: 8px;
+
+}
+
 
 /* Colection PLP */
 
@@ -159,6 +177,35 @@ padding: 0 80px;
     
   }
 }
+
+.cata_info {
+  background: #f4f4f4 url('https://cdn.shopify.com/s/files/1/0644/2087/2416/files/bg-gray-leafs.svg?v=1666705846') no-repeat;
+  background-size: cover;
+  
+}
+
+#nota-de-cata .flex {
+  column-gap: 48px;
+  text-align: center;
+}
+
+.cata-number {
+  /*font-size: 48px;*/
+  
+}
+
+#nota-de-cata h3 {
+  margin-top: 48px;
+}
+
+
+#nota-de-cata .prose {
+    font-family: var(--font-stack-header);
+    /*font-size: 34px;*/
+    font-weight: 400;
+    line-height: 44px;
+}
+
 
 /* Custom content Creamos oportunidades*/
 
@@ -274,6 +321,33 @@ padding: 0 80px;
     max-width: 377px;
 }
 
+.custom_padding_0_rmagin {
+    margin: calc(var(--column-gap)/2);
+    margin-right: 0;
+    padding: 23px;
+    background: #F4F4F4;
+}
+
+.custom_p_m_0 {
+  margin-top:0!important;
+  margin-bottom:0!important;
+}
+
+.max_image {
+    padding: 0;
+    width: 170px;
+}
+
+.justify-content {
+  display: flex;
+  justify-content: center!important;
+}
+
+.width35 {
+  width: 35%!important;
+}
+
+
 @media (min-width: 320px) and (max-width: 480px) {
   
   #sf-custom__block--f3771d9d-218c-446e-b1f5-a6e43d3e1594 {
@@ -287,6 +361,15 @@ padding: 0 80px;
   #sf-custom__block--template--16667629715680__b856f967-2415-4ef8-b08a-eea9cc21b08c-1666176275a8ca8f69-0 {
     margin-bottom: 120px
   }
+
+  .custom_padding_0_rmagin {
+    margin: 0;
+    margin-right: 0;
+    padding: 23px;
+    background: #F4F4F4;
+  }
+
+  
 }
 
 
@@ -387,7 +470,7 @@ padding: 0 80px;
   }
 }
 
-/* texts */
+/* texts 
 
 .text { 
   font-size: 18px;
@@ -398,7 +481,7 @@ p {
   font-size: 18px!important;
   line-height: 28px!important;
 }
-
+*/
 
 .h1 {
   font-size: 64px;
@@ -408,6 +491,11 @@ p {
 .h2 {
   line-height: 44px; 
   font-size: 40px;
+}
+
+.text_21 {
+    font-size: 21px;
+    line-height: 28px;
 }
 
 

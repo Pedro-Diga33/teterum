@@ -474,23 +474,33 @@
             {%- if show_vendor -%}
               <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
             {%- endif -%}
-            <div class="d33-custom-tags">
+
+               <!-- Added by D33 -->
+               <!-- Labels for custom collections -->
+                            <div class="custom-collection flex flex-row">
+
               {% for collection in product.collections %}
-                  {% if collection.metafields.custom.color_tag != blank %} 
-                    <a href="{{collection.url}}" style="border-color: {{ collection.metafields.custom.color_tag }}">
-                      {{ collection.title }}
-                    </a>
-                  {% endif %}
+              {% if collection.metafields.custom.color_tag != blank %} 
+                <a href="{{collection.url}}" class="badge-collection"  style="border: 1px solid {{ collection.metafields.custom.color_tag }}">
+                {{ collection.title }}
+              </a>
+              {% endif %}
               {% endfor %}
-            </div>
+                </div>
+
+            
             {% if show_title == true %}
               <h3 class="block">
                 <a href="{{ product.url }}" class="block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary{% if settings.uppercase_prd_name %} uppercase{% endif %}">
                   {{ product.title }}
                 </a>
               </h3>
+             
+              <!-- Added by D33 -->
               <h4 class="block text-base">{{ product.metafields.descriptors.subtitle }}</h4>
               <p class="block text-base">{{ product.metafields.custom.short_description }}</p>
+             <!-- // Added by D33 -->
+
             {% endif %}
             {% if settings.show_review_badge %}
               <div class="sf-pcard__reviews">
