@@ -16,13 +16,7 @@
         "686d370f-2c6a-4e4b-be41-5cbcdff00d36": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% for collection in product.collections %}\n                      {% if collection.metafields.custom.color_tag != blank %} \n                      <a href=\"{{collection.url}}\" style=\"border: 1px solid {{ collection.metafields.custom.color_tag }}\">\n                          {{ collection.title }}\n                        <\/a>\n                        {% endif %}\n                        {% endfor %}"
-          }
-        },
-        "4cae22e4-4309-4a96-aedc-1949d8b1e41e": {
-          "type": "d33_custom_liquid",
-          "settings": {
-            "custom_liquid": "{% render 'd33-product-tags', collection: collection %}"
+            "custom_liquid": "<div class=\"custom-collection flex flex-row\">\n    {% for collection in product.collections %}\n    {% if collection.metafields.custom.color_tag != blank %} \n      <a href=\"{{collection.url}}\" class=\"badge-collection\"  style=\"border: 1px solid {{ collection.metafields.custom.color_tag }}\">\n      {{ collection.title }}\n    <\/a>\n    {% endif %}\n    {% endfor %}\n<\/div>"
           }
         },
         "title": {
@@ -86,7 +80,6 @@
       },
       "block_order": [
         "686d370f-2c6a-4e4b-be41-5cbcdff00d36",
-        "4cae22e4-4309-4a96-aedc-1949d8b1e41e",
         "title",
         "a923fa47-dcf1-45cd-b101-77ca3c51f5be",
         "price",
