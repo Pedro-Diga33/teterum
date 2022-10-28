@@ -1,5 +1,5 @@
 
-<div class="custom-collection flex flex-row">
+<div class="d33-custom-tags flex flex-row">
     {% for collection in product.collections %}
     {% if collection.metafields.custom.color_tag != blank %} 
       <a href="{{collection.url}}" class="badge-collection"  style="border: 1px solid {{ collection.metafields.custom.color_tag }}">
