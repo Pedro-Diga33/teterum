@@ -1,1 +1,235 @@
-{"sections":{"breadcrumb":{"type":"breadcrumb","disabled":true,"settings":{"container":"container","text_alignment":"center","hide_current":true,"hide_on_mb":true}},"main":{"type":"main-product","blocks":{"686d370f-2c6a-4e4b-be41-5cbcdff00d36":{"type":"custom_liquid","settings":{"custom_liquid":"{% for collection in product.collections %}\n                      {% if collection.metafields.custom.color_tag != blank %} \n                      <a href=\"{{collection.url}}\" style=\"border: 1px solid {{ collection.metafields.custom.color_tag }}\">\n                          {{ collection.title }}\n                        <\/a>\n                        {% endif %}\n                        {% endfor %}"}},"title":{"type":"title","settings":{}},"a923fa47-dcf1-45cd-b101-77ca3c51f5be":{"type":"text","settings":{"text":"<h3 class=\"text-3xl md:text-3xl\">{{ product.metafields.descriptors.subtitle.value }}<\/h3>","text_style":"subtitle"}},"price":{"type":"price","settings":{"show_saving":false}},"2fd96693-897d-4ad9-b9b4-db0f7a594b8b":{"type":"custom_text","settings":{"content":"<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"}},"variant_picker":{"type":"variant_picker","settings":{"size_title":""}},"buy_buttons":{"type":"buy_buttons","settings":{"show_quantity_selector":true,"show_atc_button":true,"show_dynamic_checkout":false}},"addons":{"type":"addons","disabled":true,"settings":{"show_atcp":true,"show_ask_a_question":true,"show_social":true}},"66196ce7-1832-4df0-97c8-3befabbbc116":{"type":"shipping","settings":{"show_delivery_times":true,"deliver_text":"Entrega estimada:","deliver_days":"5","date_format":"%b %d","show_shipping_text":true,"shipping_text":"<p><strong>Envío gratuito<\/strong> a partir de 35€<\/p>"}}},"block_order":["686d370f-2c6a-4e4b-be41-5cbcdff00d36","title","a923fa47-dcf1-45cd-b101-77ca3c51f5be","price","2fd96693-897d-4ad9-b9b4-db0f7a594b8b","variant_picker","buy_buttons","addons","66196ce7-1832-4df0-97c8-3befabbbc116"],"settings":{"container":"container-fluid","layout":"layout-6","show_atwl":true,"enable_history_state":true,"enable_variant_group_images":true,"show_featured_media":true,"show_zoom_button":false,"enable_video_autoplay":false,"show_nav_media_mobile":false,"show_pagination_mobile":true,"use_sticky_atc":true,"use_sticky_atc_on_mobile":true,"enable_dynamic_checkout":false,"sticky_atc_wishtlist":true,"sticky_atc_compare":false}},"363303ed-31e2-4b25-a95e-128f8b1ade80":{"type":"custom-liquid","settings":{"custom_liquid":"{% if product.metafields.custom.nota_cata != blank %}\n\n<div class=\"container-fluid section-py\">\n\n\n        \n        \n        <div class=\"sf-custom__grid flex flex-wrap\">\n            \n                \n\n                <div id=\"nota-de-cata\" class=\"sf-custom__block  sf-custom__block--text flex lg:w-1\/2 w-full items-center\">\n                    <div class=\"sf-custom__block-inner w-full\">\n                        \n                                <div class=\"text-left\" style=\"--text-color: black;\">\n\n                                    <div class=\"flex flex-column\">\n                                    <div class=\"\">\n                                    <p class=\"cata-number text-2xl text-black lg:text-5xl sm:text-4xl\">{{ product.metafields.custom.cata_cucharadas }}<\/p>\n                                    <p>cucharadas<\/p>\n                                    <\/div>\n                                    <div>\n                                    <p class=\"cata-number text-2xl text-black lg:text-5xl sm:text-4xl\">{{ product.metafields.custom.cata_grados }}<\/p>\n                                    <p>grados<\/p>\n                                    <\/div>\n                                    <div>\n                                    <p class=\"cata-number text-2xl text-black lg:text-5xl sm:text-4xl\">{{ product.metafields.custom.cata_minutos }}<\/p>\n                                    <p>minutos<\/p>\n                                    <\/div>\n                                    <\/div>\n\n                                    \n                                        <h3 class=\"content__heading text-2xl text-black lg:text-5xl sm:text-4xl\">Nota de cata<\/h3>\n                                    \n                                    \n                                        <div class=\"prose rte mt-4 text-color-subtext\"><p><span class=\"metafield-multi_line_text_field text-2xl lg:text-3xl sm:text-3xl\">{{ product.metafields.custom.nota_cata }}<\/span><\/p><p>{{ product.metafields.custom.cata_author }}<\/p><\/div>\n                                    \n                                    \n                                <\/div>\n                            \n                    <\/div>\n                <\/div>\n\n            \n                \n\n                <div id=\"sf-custom__block--a801c30d-2f65-429a-9ba2-106da3c01d2f\" class=\"sf-custom__block  sf-custom__block--image flex lg:w-1\/2 w-full items-center\">\n                    <div class=\"sf-custom__block-inner w-full\">\n                        \n                                \n                        <img src=\"{{ product | image_url: width: 600 }}\" \/>                           \n                            \n                    <\/div>\n                <\/div>\n\n            \n        <\/div>\n        \n        \n    <\/div>\n\n    {% endif %}","custom_class":"cata_info"}},"product-details-tabs":{"type":"product-details-tabs","blocks":{"description":{"type":"description","settings":{"header":"Descripcion"}},"tab":{"type":"tab","settings":{"header":"Ingredientes","content":"","content_page":""}},"24ef8f22-36b6-403a-a0c0-1b2b544d1c3a":{"type":"tab","settings":{"header":"Beneficios","content":"","content_page":""}},"71989cb0-fef8-4edd-a5a0-1134b4cee20d":{"type":"reviews","settings":{"header":"Valoraciones","container":"container-fluid","custom_liquid":""}}},"block_order":["description","tab","24ef8f22-36b6-403a-a0c0-1b2b544d1c3a","71989cb0-fef8-4edd-a5a0-1134b4cee20d"],"settings":{"container":"container-narrow","bg_color":"","default_open":true}},"product-recommendations":{"type":"product-recommendations","settings":{"container":"container","heading":"¿Los has probado?","text_align":"center","limit":6,"columns":3,"column_gap":50,"enable_slider":true}},"459f7585-182b-4f30-bfbd-c8fadd21a25c":{"type":"custom-content","blocks":{"template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Recursos.png","link":"","width":"50%","alignment":"center","block_custom_class":""}},"template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-0":{"type":"text","settings":{"title":"Orgullosamente BCopp","subheading":"","text":"<p>Somos el primer y único té certificado Bcorp en España. Esto asegura que trabajamos sin cargarnos el planeta y las personas.<\/p><p><strong>Packs biodegradables y compostables<\/strong><\/p><p>Somos la única marca de té que ha apostado por material 100% bio.<\/p><p><strong>Empaquetado por personas con TEA<\/strong><\/p><p>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.<\/p><p><strong>Empaquetado por personas con TEA<\/strong><\/p><p>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.<\/p>","width":"50%","alignment":"center","align_text":"left","text_size":"medium","text_color":"black","button_label":"","button_link":"","button_style":"sf__btn-primary","button_size":"","block_custom_class":""}}},"block_order":["template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-1","template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-0"],"settings":{"heading":"","subheading":"","description":"","header_alignment":"center","container":"container-fluid","background_color":"","gap":30,"use_scroll_mobile":false,"gap_mobile":16,"padding_top":0,"padding_bottom":0,"custom_class":""}}},"order":["breadcrumb","main","363303ed-31e2-4b25-a95e-128f8b1ade80","product-details-tabs","product-recommendations","459f7585-182b-4f30-bfbd-c8fadd21a25c"]}
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "text_alignment": "center",
+        "hide_current": true,
+        "hide_on_mb": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "686d370f-2c6a-4e4b-be41-5cbcdff00d36": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% for collection in product.collections %}\n                      {% if collection.metafields.custom.color_tag != blank %} \n                      <a href=\"{{collection.url}}\" style=\"border: 1px solid {{ collection.metafields.custom.color_tag }}\">\n                          {{ collection.title }}\n                        <\/a>\n                        {% endif %}\n                        {% endfor %}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "a923fa47-dcf1-45cd-b101-77ca3c51f5be": {
+          "type": "text",
+          "settings": {
+            "text": "<h3 class=\"text-3xl md:text-3xl\">{{ product.metafields.descriptors.subtitle.value }}<\/h3>",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_saving": false
+          }
+        },
+        "2fd96693-897d-4ad9-b9b4-db0f7a594b8b": {
+          "type": "custom_text",
+          "settings": {
+            "content": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_title": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": false
+          }
+        },
+        "addons": {
+          "type": "addons",
+          "disabled": true,
+          "settings": {
+            "show_atcp": true,
+            "show_ask_a_question": true,
+            "show_social": true
+          }
+        },
+        "66196ce7-1832-4df0-97c8-3befabbbc116": {
+          "type": "shipping",
+          "settings": {
+            "show_delivery_times": true,
+            "deliver_text": "Entrega estimada:",
+            "deliver_days": "5",
+            "date_format": "%b %d",
+            "show_shipping_text": true,
+            "shipping_text": "<p><strong>Envío gratuito<\/strong> a partir de 35€<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "686d370f-2c6a-4e4b-be41-5cbcdff00d36",
+        "title",
+        "a923fa47-dcf1-45cd-b101-77ca3c51f5be",
+        "price",
+        "2fd96693-897d-4ad9-b9b4-db0f7a594b8b",
+        "variant_picker",
+        "buy_buttons",
+        "addons",
+        "66196ce7-1832-4df0-97c8-3befabbbc116"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "layout": "layout-6",
+        "show_atwl": true,
+        "enable_history_state": true,
+        "enable_variant_group_images": true,
+        "show_featured_media": true,
+        "show_zoom_button": false,
+        "enable_video_autoplay": false,
+        "show_nav_media_mobile": false,
+        "show_pagination_mobile": true,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": true,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": true,
+        "sticky_atc_compare": false
+      }
+    },
+    "363303ed-31e2-4b25-a95e-128f8b1ade80": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if product.metafields.custom.nota_cata != blank %}\n\n<div class=\"container-fluid section-py\">\n\n\n        \n        \n        <div class=\"sf-custom__grid flex flex-wrap\">\n            \n                \n\n                <div id=\"nota-de-cata\" class=\"sf-custom__block  sf-custom__block--text flex lg:w-1\/2 w-full items-center\">\n                    <div class=\"sf-custom__block-inner w-full\">\n                        \n                                <div class=\"text-left\" style=\"--text-color: black;\">\n\n                                    <div class=\"flex flex-column\">\n                                    <div class=\"\">\n                                    <p class=\"cata-number text-2xl text-black lg:text-5xl sm:text-4xl\">{{ product.metafields.custom.cata_cucharadas }}<\/p>\n                                    <p>cucharadas<\/p>\n                                    <\/div>\n                                    <div>\n                                    <p class=\"cata-number text-2xl text-black lg:text-5xl sm:text-4xl\">{{ product.metafields.custom.cata_grados }}<\/p>\n                                    <p>grados<\/p>\n                                    <\/div>\n                                    <div>\n                                    <p class=\"cata-number text-2xl text-black lg:text-5xl sm:text-4xl\">{{ product.metafields.custom.cata_minutos }}<\/p>\n                                    <p>minutos<\/p>\n                                    <\/div>\n                                    <\/div>\n\n                                    \n                                        <h3 class=\"content__heading text-2xl text-black lg:text-5xl sm:text-4xl\">Nota de cata<\/h3>\n                                    \n                                    \n                                        <div class=\"prose rte mt-4 text-color-subtext\"><p><span class=\"metafield-multi_line_text_field text-2xl lg:text-3xl sm:text-3xl\">{{ product.metafields.custom.nota_cata }}<\/span><\/p><p>{{ product.metafields.custom.cata_author }}<\/p><\/div>\n                                    \n                                    \n                                <\/div>\n                            \n                    <\/div>\n                <\/div>\n\n            \n                \n\n                <div id=\"sf-custom__block--a801c30d-2f65-429a-9ba2-106da3c01d2f\" class=\"sf-custom__block  sf-custom__block--image flex lg:w-1\/2 w-full items-center\">\n                    <div class=\"sf-custom__block-inner w-full\">\n                        \n                                \n                        <img src=\"{{ product | image_url: width: 600 }}\" \/>                           \n                            \n                    <\/div>\n                <\/div>\n\n            \n        <\/div>\n        \n        \n    <\/div>\n\n    {% endif %}",
+        "custom_class": "cata_info"
+      }
+    },
+    "product-details-tabs": {
+      "type": "product-details-tabs",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "header": "Descripcion"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "header": "Ingredientes",
+            "content": "",
+            "content_page": ""
+          }
+        },
+        "24ef8f22-36b6-403a-a0c0-1b2b544d1c3a": {
+          "type": "tab",
+          "settings": {
+            "header": "Beneficios",
+            "content": "",
+            "content_page": ""
+          }
+        },
+        "71989cb0-fef8-4edd-a5a0-1134b4cee20d": {
+          "type": "reviews",
+          "settings": {
+            "header": "Valoraciones",
+            "container": "container-fluid",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab",
+        "24ef8f22-36b6-403a-a0c0-1b2b544d1c3a",
+        "71989cb0-fef8-4edd-a5a0-1134b4cee20d"
+      ],
+      "settings": {
+        "container": "container-narrow",
+        "bg_color": "",
+        "default_open": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "container": "container",
+        "heading": "¿Los has probado?",
+        "text_align": "center",
+        "limit": 6,
+        "columns": 3,
+        "column_gap": 50,
+        "enable_slider": true
+      }
+    },
+    "459f7585-182b-4f30-bfbd-c8fadd21a25c": {
+      "type": "custom-content",
+      "blocks": {
+        "template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Recursos.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-0": {
+          "type": "text",
+          "settings": {
+            "title": "Orgullosamente BCopp",
+            "subheading": "",
+            "text": "<p>Somos el primer y único té certificado Bcorp en España. Esto asegura que trabajamos sin cargarnos el planeta y las personas.<\/p><p><strong>Packs biodegradables y compostables<\/strong><\/p><p>Somos la única marca de té que ha apostado por material 100% bio.<\/p><p><strong>Empaquetado por personas con TEA<\/strong><\/p><p>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.<\/p><p><strong>Empaquetado por personas con TEA<\/strong><\/p><p>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-1",
+        "template--16667629682912__459f7585-182b-4f30-bfbd-c8fadd21a25c-16663549689b7c84e9-0"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "363303ed-31e2-4b25-a95e-128f8b1ade80",
+    "product-details-tabs",
+    "product-recommendations",
+    "459f7585-182b-4f30-bfbd-c8fadd21a25c"
+  ]
+}
