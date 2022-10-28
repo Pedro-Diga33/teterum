@@ -22,7 +22,7 @@
 <div
     id="sf-custom-{{ section.id }}"
     class="sf-custom sf-section-padding {{ section.settings.custom_class }}"
-    data-section-type="custom-content"
+    data-section-type="d33-product-certificate"
     data-section-id="{{ section.id }}"
     {% if has_bg %}
         data-bg="{{ bg_color | color_to_hsl }}"
@@ -439,7 +439,7 @@
 
 {% schema %}
 {
-  "name": "Custom content",
+  "name": "D33 Product Certificate",
   "settings": [
     {
       "type": "header",
@@ -449,7 +449,7 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Custom content"
+      "default": "D33 Product Certificate"
     },
     {
       "type": "text",
@@ -2262,7 +2262,7 @@
   ],
   "presets": [
     {
-      "name": "Custom content",
+      "name": "D33 Product Certificate",
       "category": "Advanced layout",
       "blocks": [
         {
