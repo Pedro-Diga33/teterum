@@ -477,16 +477,7 @@
 
                <!-- Added by D33 -->
                <!-- Labels for custom collections -->
-                            <div class="custom-collection flex flex-row">
-
-              {% for collection in product.collections %}
-              {% if collection.metafields.custom.color_tag != blank %} 
-                <a href="{{collection.url}}" class="badge-collection"  style="border: 1px solid {{ collection.metafields.custom.color_tag }}">
-                {{ collection.title }}
-              </a>
-              {% endif %}
-              {% endfor %}
-                </div>
+               {% render 'd33-product-tags'%}
 
             
             {% if show_title == true %}

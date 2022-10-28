@@ -1,7 +1,9 @@
-{% for collection in product.collections %}
+<div class="custom-collection flex flex-row">
+    {% for collection in product.collections %}
     {% if collection.metafields.custom.color_tag != blank %} 
-    <a href="{{collection.url}}" style="border: 1px solid {{ collection.metafields.custom.color_tag }}">
-        {{ collection.title }}
-      </a>
+      <a href="{{collection.url}}" class="badge-collection"  style="border: 1px solid {{ collection.metafields.custom.color_tag }}">
+      {{ collection.title }}
+    </a>
     {% endif %}
-{% endfor %}
+    {% endfor %}
+</div>
