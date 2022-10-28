@@ -1,3 +1,7 @@
+
+{%- liquid
+    assign collection = product.collections
+%}
 <div class="custom-collection flex flex-row">
     {% for collection in product.collections %}
     {% if collection.metafields.custom.color_tag != blank %} 
