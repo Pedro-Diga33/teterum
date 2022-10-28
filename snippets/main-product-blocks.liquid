@@ -430,6 +430,12 @@
                   {{ block.settings.custom_liquid }}
                 </div>
               {% endif %}
+              {%- when 'd33_custom_liquid' -%}
+                {% if block.settings.d33_custom_liquid != blank %}
+                  <div class="bottom-block__text">
+                    {{ block.settings.d33_custom_liquid }}
+                  </div>
+                {% endif %}
             {%- when 'trust_badge' -%}
               {% if block.settings.trust_badges_image != blank %}
                 {% assign position = block.settings.position %}
