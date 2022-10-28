@@ -40,3 +40,13 @@ body .d33-custom-tags a {
     border-radius: 50px;
     font-weight: 700;
 }
+
+body .heroSlider .container-fluid {
+    position: absolute;
+    bottom: 10vh;
+    z-index: 99;
+}
+body .heroSlider .container-fluid  .swiper-pagination {
+    justify-content: flex-start;
+    position: static;
+}
