@@ -475,10 +475,12 @@
               <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
             {%- endif -%}
 
+            
                <!-- Added by D33 -->
                <!-- Labels for custom collections -->
 
-                {% render 'd33-product-tags' product: product %} 
+               {% render 'd33-product-tags' product: product %} 
+
             
             {% if show_title == true %}
               <h3 class="block">

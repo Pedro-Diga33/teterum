@@ -1,3 +1,5 @@
+@import url('../icomoon/style.css');
+
 body .d33-featured-collection .custom-header  .custom-arrow .sf-slider__controls {
     display: block;
     position: relative;
@@ -50,4 +52,9 @@ body .heroSlider .container-fluid {
 body .heroSlider .container-fluid  .swiper-pagination {
     justify-content: flex-start;
     position: static;
+}
+
+.prose p::before {
+    content: '\e900';
+    font-family: 'icomoon';
 }
