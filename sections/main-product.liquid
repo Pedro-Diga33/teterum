@@ -458,44 +458,6 @@
         }
       ]
     },
-    
-    {
-      "type": "collections",
-      "name": "d33 Collections list",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Collections"
-        },
-        {
-          "type": "link_list",
-          "id": "menu",
-          "label": "Menu",
-          "info": "Only show items linked to a collection"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_image",
-          "label": "Show featured image",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "use_accordion",
-          "label": "Enable collapsible",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "open_filtergroup",
-          "label": "Expand by default",
-          "default": true
-        }
-      ]
-    },
-
     {
       "type": "description",
       "name": "Full description",
@@ -609,6 +571,18 @@
           "type": "liquid",
           "id": "custom_liquid",
           "label": "Custom liquid"
+        }
+      ]
+    },
+    {
+      "type": "d33_custom_liquid",
+      "name": "D33 Custom liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom liquid",
+          "default": "{{ collection.title }}"
         }
       ]
     },
