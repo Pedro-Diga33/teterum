@@ -458,18 +458,44 @@
         }
       ]
     },
+    
     {
-      "type": "tags",
-      "name": "D33 Custom tags",
-      "limit": 1,
+      "type": "collections",
+      "name": "d33 Collections list",
       "settings": [
         {
-          "type": "header",
-          "content": "{% render 'product-card' %}"
-        
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Collections"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "Only show items linked to a collection"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image",
+          "label": "Show featured image",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "use_accordion",
+          "label": "Enable collapsible",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "open_filtergroup",
+          "label": "Expand by default",
+          "default": true
         }
       ]
     },
+
     {
       "type": "description",
       "name": "Full description",
