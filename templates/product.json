@@ -13,16 +13,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "686d370f-2c6a-4e4b-be41-5cbcdff00d36": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"custom-collection flex flex-row\">\n    {% for collection in product.collections %}\n    {% if collection.metafields.custom.color_tag != blank %} \n      <a href=\"{{collection.url}}\" class=\"badge-collection\"  style=\"border: 1px solid {{ collection.metafields.custom.color_tag }}\">\n      {{ collection.title }}\n    <\/a>\n    {% endif %}\n    {% endfor %}\n<\/div>"
-          }
-        },
         "8e814ae0-879b-4e24-b0b8-f13928799f36": {
           "type": "d33_custom_liquid",
           "settings": {
-            "custom_liquid": "{% render 'd33-product-tags', product: product %}"
+            "d33_custom_liquid": "{% render 'd33-product-tags' %}"
           }
         },
         "title": {
@@ -85,7 +79,6 @@
         }
       },
       "block_order": [
-        "686d370f-2c6a-4e4b-be41-5cbcdff00d36",
         "8e814ae0-879b-4e24-b0b8-f13928799f36",
         "title",
         "a923fa47-dcf1-45cd-b101-77ca3c51f5be",
