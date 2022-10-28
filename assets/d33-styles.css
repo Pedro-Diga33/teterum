@@ -29,3 +29,14 @@ body .d33-featured-collection.collection-list__inner {
         padding-left: calc((100vw - 1620px)/ 2);
     }
 }
+body .d33-custom-tags {
+    padding-bottom: 20px;
+}
+body .d33-custom-tags a {
+    border: 2px solid;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 700;
+}

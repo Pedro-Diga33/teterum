@@ -474,10 +474,10 @@
             {%- if show_vendor -%}
               <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
             {%- endif -%}
-            <div>
+            <div class="d33-custom-tags">
               {% for collection in product.collections %}
                   {% if collection.metafields.custom.color_tag != blank %} 
-                    <a href="{{collection.url}}" style="border: 1px solid {{ collection.metafields.custom.color_tag }}">
+                    <a href="{{collection.url}}" style="border-color: {{ collection.metafields.custom.color_tag }}">
                       {{ collection.title }}
                     </a>
                   {% endif %}
