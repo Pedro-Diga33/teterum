@@ -75,7 +75,9 @@ body .heroSlider .container-fluid  .swiper-pagination {
 }
 
 .d33-custom-list-icons .d33-icon span {
+    display: block;
     font-size: 30px;
+    margin-top: 5px;
 }
 .d33-custom-list-icons .d33-icon-content h4 {
 

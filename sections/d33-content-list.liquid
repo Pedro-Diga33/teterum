@@ -31,8 +31,25 @@
 >
     <div class="{{ section.settings.container }}{% if has_bg == false %} section-my{% else %} section-py{% endif %}">
         {%- assign block_width_mobile = '' -%}
-        {% render 'index-section-header', section_settings: section.settings %}
+        
+        {% comment %} {% render 'index-section-header', section_settings: section.settings %} {% endcomment %}
 
+        
+        {% if section.settings.heading != blank or section.settings.subheading != blank or section.settings.description != blank %}
+          <div class="section__header text-{{ section.settings.header_alignment }}{% if section.settings.container == 'w-full' %} px-5{% endif %}">
+              {% if section.settings.subheading != blank %}
+                  <p class="section__subheading">{{ section.settings.subheading }}</p>
+              {% endif %}
+              {% if section.settings.heading != blank %}
+                  <h2 class="section__heading">{{ section.settings.heading }}</h2>
+              {% endif %}
+              {% if section.settings.description != blank %}
+                  <div class="section__description text-{{ section.settings.description_alignment }}">{{ section.settings.description }}</div>
+              {% endif %}
+          </div>
+      {% endif %}
+
+      
         {% if section.blocks.size > 0 %}
         {% if scrollMobile %}<div class="sf__ms">{% endif %}
         <div class="sf-custom__grid flex {% unless scrollMobile %}flex-wrap{% else %}sf__ms-wrapper md:flex-wrap{% endunless %}">
@@ -71,9 +88,9 @@
                     <div class="sf-custom__block-inner w-full">
                         {% case block.type %}
                             {% when 'text' %}
-                                <div class="d33-custom-text d33-content-list-icons text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
+                                <div class="d33-custom-text text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
                                     {% if block.settings.heading_1 != blank %}
-                                        <div class="d33-custom-list-icons flex flex-row">
+                                        <div class="d33-custom-list-icons d33-content-list-icons flex flex-row">
                                           <div class="d33-icon">
                                             <span class="icon {{ block.settings.icon_1 }}"></span>
                                           </div>
@@ -121,6 +138,22 @@
     {
       "type": "select",
       "id": "header_alignment",
+      "label": "Text alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "description_alignment",
       "label": "Text alignment",
       "default": "center",
       "options": [
