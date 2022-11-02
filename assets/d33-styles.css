@@ -59,15 +59,31 @@ body .heroSlider .container-fluid  .swiper-pagination {
     font-family: 'icomoon';
 }
 
+.d33-custom-text h3 {
+    font-size: 44px;
+    margin-bottom: 40px;
+}
 
 .d33-custom-list-icons {
     display: flex;
     flex-direction: row;
+    padding-bottom: 30px;
 }
 .d33-custom-list-icons .d33-icon {
+    padding-right: 15px;
+    min-width: 60px;
+    text-align: center;
+}
+.d33-custom-list-icons .d33-icon span {
+    font-size: 30px;
+}
+.d33-custom-list-icons .d33-icon-content h4 {
 
 }
-.d33-custom-list-icons .d33-icon .d33-icon-content {
-
+.d33-custom-list-icons .d33-icon-content div {
+    margin-top: 10px;
+   max-width: 80%;
 }
-
+.d33-custom-list-icons .d33-icon-content div p {
+    margin: 0;
+}
