@@ -194,6 +194,7 @@
         "subheading": "",
         "description": "Esto es lo que sucede cuando el cliente de tu negocio pida una infusión o té:",
         "header_alignment": "center",
+        "description_alignment": "left",
         "container": "container-fluid",
         "background_color": "",
         "gap": 30,
