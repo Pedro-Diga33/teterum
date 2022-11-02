@@ -86,12 +86,15 @@
                                     {% if block.settings.subheading != blank %}
                                         <p class="mb-5 content__subheading text-{{ block.settings.text_color }}">{{ block.settings.subheading }}</p>
                                     {% endif %}
-
-                                    {% when 'text_content' %}
-                                      {% if block.settings.heading_1 != blank %}
-                                          <h4><span class="icon {{ block.settings.icon_1 }}"></span> {{ block.settings.heading_1 }} </h4>
-                                          <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
+                                    {% case block.type %}
+                                      {% when 'text_content' %}
+                                        {% if block.settings.heading_1 != blank %}
+                                          <div style="width: 100%;">
+                                            <h4><span class="icon {{ block.settings.icon_1 }}"></span> {{ block.settings.heading_1 }} </h4>
+                                            <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
+                                          </div>
                                       {% endif %}
+                                    {% endcase %}
 
                                     {% if block.settings.button_label != blank %}
                                         <div class="sf-custom__text-cta mt-5 md:mt-8">
