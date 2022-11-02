@@ -86,12 +86,14 @@
                                     {% if block.settings.subheading != blank %}
                                         <p class="mb-5 content__subheading text-{{ block.settings.text_color }}">{{ block.settings.subheading }}</p>
                                     {% endif %}
+
+                                    {% assign bs = block.settings %}
                                     {% case block.type %}
                                       {% when 'text_content' %}
-                                        {% if block.settings.heading_1 != blank %}
+                                        {% if bs.heading_1 != blank %}
                                           <div style="width: 100%;">
-                                            <h4><span class="icon {{ block.settings.icon_1 }}"></span> {{ block.settings.heading_1 }} </h4>
-                                            <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
+                                            <h4><span class="icon {{ bs.icon_1 }}"></span> {{ bs.heading_1 }} </h4>
+                                            <div class="prose rte mt-4 text-color-subtext">{{ bs.text_1 }}</div>
                                           </div>
                                       {% endif %}
                                     {% endcase %}
