@@ -53,12 +53,6 @@ body .heroSlider .container-fluid  .swiper-pagination {
     justify-content: flex-start;
     position: static;
 }
-
-
-.icon {
-    font-family: 'icomoon';
-}
-
 .d33-custom-text h3 {
     font-size: 44px;
     margin-bottom: 40px;
