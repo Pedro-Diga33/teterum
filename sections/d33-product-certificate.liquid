@@ -86,17 +86,41 @@
                                     {% if block.settings.subheading != blank %}
                                         <p class="mb-5 content__subheading text-{{ block.settings.text_color }}">{{ block.settings.subheading }}</p>
                                     {% endif %}
+
                                     {% if block.settings.heading_1 != blank %}
-                                        <div>
-                                          <div>
+                                        <div class="d33-custom-list-icons flex flex-row">
+                                          <div class="d33-icon">
                                             <span class="icon {{ block.settings.icon_1 }}"></span>
                                           </div>
-                                          <div>
+                                          <div class="d33-icon-content">
                                             <h4>{{ block.settings.heading_1 }} </h4>
                                             <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
                                           </div>
                                         </div>
                                     {% endif %}
+                                    {% if block.settings.heading_2 != blank %}
+                                      <div class="d33-custom-list-icons flex flex-row">
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_2 }}"></span>
+                                        </div>
+                                        <div class="d33-icon-content">
+                                          <h4>{{ block.settings.heading_2 }} </h4>
+                                          <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_2 }}</div>
+                                        </div>
+                                      </div>
+                                  {% endif %}
+                                  {% if block.settings.heading_3 != blank %}
+                                    <div class="d33-custom-list-icons flex flex-row">
+                                      <div class="d33-icon">
+                                        <span class="icon {{ block.settings.icon_3 }}"></span>
+                                      </div>
+                                      <div class="d33-icon-content">
+                                        <h4>{{ block.settings.heading_3 }} </h4>
+                                        <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_3 }}</div>
+                                      </div>
+                                    </div>
+                                {% endif %}
+
                                     {% if block.settings.button_label != blank %}
                                         <div class="sf-custom__text-cta mt-5 md:mt-8">
                                             <a href="{{ block.settings.button_link }}" class="sf__btn {{ block.settings.button_style }} {{ block.settings.button_size }}">{{ block.settings.button_label }}</a>

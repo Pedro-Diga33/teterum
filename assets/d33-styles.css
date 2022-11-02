@@ -58,3 +58,16 @@ body .heroSlider .container-fluid  .swiper-pagination {
 .icon {
     font-family: 'icomoon';
 }
+
+
+.d33-custom-list-icons {
+    display: flex;
+    flex-direction: row;
+}
+.d33-custom-list-icons .d33-icon {
+
+}
+.d33-custom-list-icons .d33-icon .d33-icon-content {
+
+}
+
