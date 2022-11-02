@@ -209,11 +209,18 @@
             "button_size": "",
             "block_custom_class": ""
           }
+        },
+        "ba5979e7-c453-4480-afa8-30ef97c82cac": {
+          "type": "text_content",
+          "settings": {
+            "icon_1": "icon-ball"
+          }
         }
       },
       "block_order": [
         "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-1",
-        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-0"
+        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-0",
+        "ba5979e7-c453-4480-afa8-30ef97c82cac"
       ],
       "settings": {
         "heading": "",
