@@ -78,7 +78,7 @@
                                 {% else %}
                                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg sf__placeholder-svg sf__placeholder-svg-no-border' }}
                                 {% endif %}
-                            {% when 'text' && 'content' %}
+                            {% when 'text' %}
                                 <div class="text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
                                     {% if block.settings.title != blank %}
                                         <h3 class="content__heading text-2xl text-{{ block.settings.text_color }} {% if block.settings.text_size == 'medium' %}lg:text-5xl sm:text-4xl{% else %}lg:text-7xl sm:text-6xl {% endif %}">{{ block.settings.title }}</h3>
@@ -580,108 +580,6 @@
   ],
   "blocks": [
     {
-      "type": "content",
-      "name": "Content",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon_1",
-          "label": "Icons",
-          "default": "icon-box",
-          "options": [
-            {
-              "value": "icon-box",
-              "label": "Box"
-            },
-            {
-              "value": "icon-people",
-              "label": "People"
-            },
-            {
-              "value": "icon-ball",
-              "label": "Ball"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "heading_1",
-          "label": "Heading",
-          "default": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "text_1",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "select",
-          "id": "icon_2",
-          "label": "Icons",
-          "default": "icon-people",
-          "options": [
-            {
-              "value": "icon-box",
-              "label": "Box"
-            },
-            {
-              "value": "icon-people",
-              "label": "People"
-            },
-            {
-              "value": "icon-ball",
-              "label": "Ball"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "heading_2",
-          "label": "Heading",
-          "default": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "text_2",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "select",
-          "id": "icon_3",
-          "label": "Icons",
-          "default": "icon-ball",
-          "options": [
-            {
-              "value": "icon-box",
-              "label": "Box"
-            },
-            {
-              "value": "icon-people",
-              "label": "People"
-            },
-            {
-              "value": "icon-ball",
-              "label": "Ball"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "heading_3",
-          "label": "Heading",
-          "default": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "text_3",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        }
-      ]
-    },
-    {
       "type": "text",
       "name": "Text",
       "settings": [
@@ -863,9 +761,106 @@
           "type": "text",
           "id": "block_custom_class",
           "label": "Custom classes"
+        },
+        {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Icons",
+          "default": "icon-box",
+          "options": [
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-people",
+              "label": "People"
+            },
+            {
+              "value": "icon-ball",
+              "label": "Ball"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "select",
+          "id": "icon_2",
+          "label": "Icons",
+          "default": "icon-people",
+          "options": [
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-people",
+              "label": "People"
+            },
+            {
+              "value": "icon-ball",
+              "label": "Ball"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_2",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "select",
+          "id": "icon_3",
+          "label": "Icons",
+          "default": "icon-ball",
+          "options": [
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-people",
+              "label": "People"
+            },
+            {
+              "value": "icon-ball",
+              "label": "Ball"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_3",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text_3",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         }
       ]
     },
+    
     {
       "type": "image",
       "name": "Image",
