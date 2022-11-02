@@ -36,7 +36,7 @@
 
         
         {% if section.settings.heading != blank or section.settings.subheading != blank or section.settings.description != blank %}
-          <div class="section__header text-{{ section.settings.header_alignment }}{% if section.settings.container == 'w-full' %} px-5{% endif %}">
+          <div class="section__header d33-custom-text text-{{ section.settings.header_alignment }}{% if section.settings.container == 'w-full' %} px-5{% endif %}">
               {% if section.settings.subheading != blank %}
                   <p class="section__subheading">{{ section.settings.subheading }}</p>
               {% endif %}
@@ -88,18 +88,26 @@
                     <div class="sf-custom__block-inner w-full">
                         {% case block.type %}
                             {% when 'text' %}
-                                <div class="d33-custom-text text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
-                                    {% if block.settings.heading_1 != blank %}
-                                        <div class="d33-custom-list-icons d33-content-list-icons flex flex-row">
-                                          <div class="d33-icon">
-                                            <span class="icon {{ block.settings.icon_1 }}"></span>
-                                          </div>
-                                          <div class="d33-icon-content">
-                                            <h4>{{ block.settings.heading_1 }} </h4>
-                                            <div class="prose rte text-color-subtext">{{ block.settings.text_1 }}</div>
-                                          </div>
+                                <div class="text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
+                                    <div class="d33-custom-list-icons d33-content-list-icons flex flex-row">
+                                      {% if block.settings.icon_1 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_1 }}"></span>
                                         </div>
-                                    {% endif %}
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_1 != blank %}
+                                          <h4>
+                                            {{ block.settings.heading_1 }}
+                                          </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">
+                                            {{ block.settings.text_1 }}
+                                          </div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
                                 </div>
                         {% endcase %}
                     </div>
@@ -138,7 +146,7 @@
     {
       "type": "select",
       "id": "header_alignment",
-      "label": "Text alignment",
+      "label": "Header alignment",
       "default": "center",
       "options": [
         {
@@ -154,7 +162,7 @@
     {
       "type": "select",
       "id": "description_alignment",
-      "label": "Text alignment",
+      "label": "Description alignment",
       "default": "center",
       "options": [
         {

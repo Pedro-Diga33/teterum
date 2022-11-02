@@ -53,9 +53,12 @@ body .heroSlider .container-fluid  .swiper-pagination {
     justify-content: flex-start;
     position: static;
 }
+.d33-custom-text h2 {
+    margin-bottom: 20px;
+}
 .d33-custom-text h3 {
     font-size: 44px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .d33-custom-list-icons {
