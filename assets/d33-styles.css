@@ -54,7 +54,7 @@ body .heroSlider .container-fluid  .swiper-pagination {
     position: static;
 }
 
-.prose p::before {
-    content: '\e900';
+
+.icon {
     font-family: 'icomoon';
 }
