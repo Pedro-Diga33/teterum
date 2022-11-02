@@ -105,9 +105,9 @@
                                     {% endif %}
                                     {% when 'text_content' %}
                                       {% if block.settings.heading_1 != blank %}
-                                        <h4><span class="icon {{ block.settings.icon_1 }}"></span> {{ block.settings.heading_1 }} </h4>
-                                        <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
-                                    {% endif %}
+                                          <h4><span class="icon {{ block.settings.icon_1 }}"></span> {{ block.settings.heading_1 }} </h4>
+                                          <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
+                                      {% endif %}
                                 </div>
                             {% when 'video' %}
                                 {{ 'video.css' | asset_url | stylesheet_tag }}
@@ -607,6 +607,18 @@
               "label": "Ball"
             }
           ]
+        },
+        {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         }
       ]
     },
@@ -770,70 +782,6 @@
         {
           "type": "richtext",
           "id": "text_1",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "select",
-          "id": "icon_2",
-          "label": "Icons",
-          "default": "icon-people",
-          "options": [
-            {
-              "value": "icon-box",
-              "label": "Box"
-            },
-            {
-              "value": "icon-people",
-              "label": "People"
-            },
-            {
-              "value": "icon-ball",
-              "label": "Ball"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "heading_2",
-          "label": "Heading",
-          "default": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "text_2",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "select",
-          "id": "icon_3",
-          "label": "Icons",
-          "default": "icon-ball",
-          "options": [
-            {
-              "value": "icon-box",
-              "label": "Box"
-            },
-            {
-              "value": "icon-people",
-              "label": "People"
-            },
-            {
-              "value": "icon-ball",
-              "label": "Ball"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "heading_3",
-          "label": "Heading",
-          "default": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "text_3",
           "label": "Text",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
