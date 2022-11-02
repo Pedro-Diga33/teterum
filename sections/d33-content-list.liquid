@@ -71,7 +71,7 @@
                     <div class="sf-custom__block-inner w-full">
                         {% case block.type %}
                             {% when 'text' %}
-                                <div class="d33-custom-text text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
+                                <div class="d33-custom-text d33-content-list-icons text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
                                     {% if block.settings.heading_1 != blank %}
                                         <div class="d33-custom-list-icons flex flex-row">
                                           <div class="d33-icon">

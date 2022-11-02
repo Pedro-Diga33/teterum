@@ -63,11 +63,17 @@ body .heroSlider .container-fluid  .swiper-pagination {
     flex-direction: row;
     padding-bottom: 30px;
 }
+.d33-custom-list-icons.d33-content-list-icons {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+}
 .d33-custom-list-icons .d33-icon {
     padding-right: 15px;
     min-width: 60px;
     text-align: center;
 }
+
 .d33-custom-list-icons .d33-icon span {
     font-size: 30px;
 }
@@ -76,7 +82,10 @@ body .heroSlider .container-fluid  .swiper-pagination {
 }
 .d33-custom-list-icons .d33-icon-content div {
     margin-top: 10px;
-   max-width: 80%;
+    max-width: 80%;
+}
+.d33-custom-list-icons.d33-content-list-icons .d33-icon-content div {
+    max-width: 100%;
 }
 .d33-custom-list-icons .d33-icon-content div p {
     margin: 0;
