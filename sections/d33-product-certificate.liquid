@@ -86,17 +86,17 @@
                                     {% if block.settings.subheading != blank %}
                                         <p class="mb-5 content__subheading text-{{ block.settings.text_color }}">{{ block.settings.subheading }}</p>
                                     {% endif %}
-                                    {% if block.settings.text != blank %}
-                                        <span class="icon {{ block.settings.icon }}"></span>
-                                        <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text }}</div>
-                                    {% endif %}
-                                    {% if block.settings.text_1 != blank %}
-                                        <span class="icon {{ block.settings.icon_1 }}"></span>
+                                    {% if block.settings.heading_1 != blank %}
+                                        <h4><span class="icon {{ block.settings.icon_1 }}"></span> {{ block.settings.heading_1 }} </h4>
                                         <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
                                     {% endif %}
-                                    {% if block.settings.text_2 != blank %}
-                                      <span class="icon {{ block.settings.icon_2 }}"></span>
-                                      <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_2 }}</div>
+                                    {% if block.settings.heading_2 != blank %}
+                                        <h4><span class="icon {{ block.settings.icon_2 }}"></span> {{ block.settings.heading_2 }} </h4>
+                                        <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_2 }}</div>
+                                    {% endif %}
+                                    {% if block.settings.heading_3 != blank %}
+                                      <h4><span class="icon {{ block.settings.icon_3 }}"></span> {{ block.settings.heading_3 }} </h4>
+                                      <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_3 }}</div>
                                     {% endif %}
                                     {% if block.settings.button_label != blank %}
                                         <div class="sf-custom__text-cta mt-5 md:mt-8">
@@ -597,7 +597,7 @@
         },
         {
           "type": "select",
-          "id": "icon",
+          "id": "icon_1",
           "label": "Icons",
           "default": "icon-box",
           "options": [
@@ -616,14 +616,20 @@
           ]
         },
         {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
           "type": "richtext",
-          "id": "text",
+          "id": "text_1",
           "label": "Text",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
         {
           "type": "select",
-          "id": "icon_1",
+          "id": "icon_2",
           "label": "Icons",
           "default": "icon-people",
           "options": [
@@ -642,14 +648,20 @@
           ]
         },
         {
+          "type": "text",
+          "id": "heading_2",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
           "type": "richtext",
-          "id": "text_1",
+          "id": "text_2",
           "label": "Text",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
         {
           "type": "select",
-          "id": "icon_2",
+          "id": "icon_3",
           "label": "Icons",
           "default": "icon-ball",
           "options": [
@@ -668,8 +680,14 @@
           ]
         },
         {
+          "type": "text",
+          "id": "heading_3",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
           "type": "richtext",
-          "id": "text_2",
+          "id": "text_3",
           "label": "Text",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
