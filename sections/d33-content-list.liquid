@@ -90,34 +90,6 @@
                                           </div>
                                         </div>
                                     {% endif %}
-                                    {% if block.settings.heading_2 != blank %}
-                                      <div class="d33-custom-list-icons flex flex-row">
-                                        <div class="d33-icon">
-                                          <span class="icon {{ block.settings.icon_2 }}"></span>
-                                        </div>
-                                        <div class="d33-icon-content">
-                                          <h4>{{ block.settings.heading_2 }} </h4>
-                                          <div class="prose rte text-color-subtext">{{ block.settings.text_2 }}</div>
-                                        </div>
-                                      </div>
-                                  {% endif %}
-                                  {% if block.settings.heading_3 != blank %}
-                                    <div class="d33-custom-list-icons flex flex-row">
-                                      <div class="d33-icon">
-                                        <span class="icon {{ block.settings.icon_3 }}"></span>
-                                      </div>
-                                      <div class="d33-icon-content">
-                                        <h4>{{ block.settings.heading_3 }} </h4>
-                                        <div class="prose rte text-color-subtext">{{ block.settings.text_3 }}</div>
-                                      </div>
-                                    </div>
-                                {% endif %}
-
-                                    {% if block.settings.button_label != blank %}
-                                        <div class="sf-custom__text-cta mt-5 md:mt-8">
-                                            <a href="{{ block.settings.button_link }}" class="sf__btn {{ block.settings.button_style }} {{ block.settings.button_size }}">{{ block.settings.button_label }}</a>
-                                        </div>
-                                    {% endif %}
                                 </div>
                         {% endcase %}
                     </div>
@@ -423,70 +395,6 @@
         {
           "type": "richtext",
           "id": "text_1",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "select",
-          "id": "icon_2",
-          "label": "Icons",
-          "default": "icon-group",
-          "options": [
-            {
-              "value": "icon-box",
-              "label": "Box"
-            },
-            {
-              "value": "icon-group",
-              "label": "group"
-            },
-            {
-              "value": "icon-world",
-              "label": "world"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "heading_2",
-          "label": "Heading",
-          "default": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "text_2",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "select",
-          "id": "icon_3",
-          "label": "Icons",
-          "default": "icon-world",
-          "options": [
-            {
-              "value": "icon-box",
-              "label": "Box"
-            },
-            {
-              "value": "icon-group",
-              "label": "group"
-            },
-            {
-              "value": "icon-world",
-              "label": "world"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "heading_3",
-          "label": "Heading",
-          "default": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "text_3",
           "label": "Text",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
