@@ -80,14 +80,23 @@
                                 {% endif %}
                             {% when 'text' %}
                                 <div class="text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
+                                    {% if block.settings.title != blank %}
+                                        <h3 class="content__heading text-2xl text-{{ block.settings.text_color }} {% if block.settings.text_size == 'medium' %}lg:text-5xl sm:text-4xl{% else %}lg:text-7xl sm:text-6xl {% endif %}">{{ block.settings.title }}</h3>
+                                    {% endif %}  
                                     {% if block.settings.subheading != blank %}
                                         <p class="mb-5 content__subheading text-{{ block.settings.text_color }}">{{ block.settings.subheading }}</p>
                                     {% endif %}
-                                    {% if block.settings.title != blank %}
-                                        <h3 class="content__heading text-2xl text-{{ block.settings.text_color }} {% if block.settings.text_size == 'medium' %}lg:text-5xl sm:text-4xl{% else %}lg:text-7xl sm:text-6xl {% endif %}">{{ block.settings.title }}</h3>
-                                    {% endif %}
                                     {% if block.settings.text != blank %}
+                                        <span class="icon {{ block.settings.icon }}"></span>
                                         <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text }}</div>
+                                    {% endif %}
+                                    {% if block.settings.text_1 != blank %}
+                                        <span class="icon {{ block.settings.icon_1 }}"></span>
+                                        <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
+                                    {% endif %}
+                                    {% if block.settings.text_2 != blank %}
+                                      <span class="icon {{ block.settings.icon_2 }}"></span>
+                                      <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_2 }}</div>
                                     {% endif %}
                                     {% if block.settings.button_label != blank %}
                                         <div class="sf-custom__text-cta mt-5 md:mt-8">
@@ -587,8 +596,80 @@
           "label": "Subheading"
         },
         {
+          "type": "select",
+          "id": "icon",
+          "label": "Icons",
+          "default": "icon-box",
+          "options": [
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-people",
+              "label": "People"
+            },
+            {
+              "value": "icon-ball",
+              "label": "Ball"
+            }
+          ]
+        },
+        {
           "type": "richtext",
           "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Icons",
+          "default": "icon-people",
+          "options": [
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-people",
+              "label": "People"
+            },
+            {
+              "value": "icon-ball",
+              "label": "Ball"
+            }
+          ]
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "select",
+          "id": "icon_2",
+          "label": "Icons",
+          "default": "icon-ball",
+          "options": [
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-people",
+              "label": "People"
+            },
+            {
+              "value": "icon-ball",
+              "label": "Ball"
+            }
+          ]
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
           "label": "Text",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
