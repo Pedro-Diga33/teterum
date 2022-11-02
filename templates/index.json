@@ -82,7 +82,7 @@
             "text_color": "black",
             "icon_1": "icon-mail",
             "heading_1": "Title",
-            "text_1": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_1": "",
             "button_label": "",
             "button_link": "",
             "button_style": "sf__btn-primary",
