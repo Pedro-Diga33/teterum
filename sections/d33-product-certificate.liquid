@@ -103,6 +103,11 @@
                                             <a href="{{ block.settings.button_link }}" class="sf__btn {{ block.settings.button_style }} {{ block.settings.button_size }}">{{ block.settings.button_label }}</a>
                                         </div>
                                     {% endif %}
+                                    {% when 'text_content' %}
+                                      {% if block.settings.heading_1 != blank %}
+                                        <h4><span class="icon {{ block.settings.icon_1 }}"></span> {{ block.settings.heading_1 }} </h4>
+                                        <div class="prose rte mt-4 text-color-subtext">{{ block.settings.text_1 }}</div>
+                                    {% endif %}
                                 </div>
                             {% when 'video' %}
                                 {{ 'video.css' | asset_url | stylesheet_tag }}
@@ -580,6 +585,30 @@
   ],
   "blocks": [
     {
+      "type": "text_content",
+      "name": "Text Content",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Icons",
+          "default": "icon-box",
+          "options": [
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-people",
+              "label": "People"
+            },
+            {
+              "value": "icon-ball",
+              "label": "Ball"
+            }
+          ]
+        }
+      ],
       "type": "text",
       "name": "Text",
       "settings": [
