@@ -189,7 +189,10 @@
           "settings": {
             "title": "Orgullosamente BCorp",
             "subheading": "Somos el primer y único té certificado Bcorp en España. Esto asegura que trabajamos sin cargarnos el planeta y las personas.",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "icon_1": "icon-people",
+            "text_1": "<p>Empaquetado por personas con TEA<br\/>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.<\/p>",
+            "icon_2": "icon-ball",
+            "text_2": "<p>Empaquetado por personas con TEA<br\/>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.<\/p>",
             "width": "50%",
             "alignment": "center",
             "align_text": "left",
