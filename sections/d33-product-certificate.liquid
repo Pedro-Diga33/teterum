@@ -445,7 +445,6 @@
         {% endif %}
     </div>
   </div>
-
 {% schema %}
 {
   "name": "D33 Product Certificate",
@@ -581,20 +580,9 @@
   ],
   "blocks": [
     {
-      "type": "text",
-      "name": "Text",
+      "type": "content",
+      "name": "Content",
       "settings": [
-        {
-          "type": "textarea",
-          "id": "title",
-          "label": "Heading",
-          "default": "Talk about your brand"
-        },
-        {
-          "type": "textarea",
-          "id": "subheading",
-          "label": "Subheading"
-        },
         {
           "type": "select",
           "id": "icon_1",
@@ -690,7 +678,13 @@
           "id": "text_3",
           "label": "Text",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
         {
           "type": "select",
           "id": "width",
