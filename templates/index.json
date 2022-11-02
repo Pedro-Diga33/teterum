@@ -69,15 +69,13 @@
         "custom_class": "heroSlider"
       }
     },
-    "031d3cff-418b-4027-a9c1-d901aa9c90d5": {
+    "3d41e460-7989-4f8a-9511-332f17ae284f": {
       "type": "d33-content-list",
       "blocks": {
-        "template--16672375439584__031d3cff-418b-4027-a9c1-d901aa9c90d5-166740258403331dfc-0": {
+        "template--16672375439584__3d41e460-7989-4f8a-9511-332f17ae284f-16674059616fd68417-0": {
           "type": "text",
           "settings": {
-            "title": "Talk about your brand",
-            "subheading": "",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -92,12 +90,10 @@
             "block_custom_class": ""
           }
         },
-        "7e4191fb-c664-4281-8d4c-a909772d7626": {
+        "b83974ac-2993-4c00-8a92-3552a941a3af": {
           "type": "text",
           "settings": {
-            "title": "Talk about your brand",
-            "subheading": "",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -112,12 +108,10 @@
             "block_custom_class": ""
           }
         },
-        "a04d9de4-c1e1-4663-a665-430796b21f17": {
+        "ae9226cf-8df2-445d-a7c1-35c0a89b8fca": {
           "type": "text",
           "settings": {
-            "title": "Talk about your brand",
-            "subheading": "",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -132,32 +126,10 @@
             "block_custom_class": ""
           }
         },
-        "27a330c5-d5aa-46ae-a512-831b0609a85d": {
+        "b0d9c1c9-a254-4709-af25-bc9fa6ad9da3": {
           "type": "text",
           "settings": {
-            "title": "Talk about your brand",
-            "subheading": "",
-            "width": "50%",
-            "alignment": "center",
-            "align_text": "left",
-            "text_size": "medium",
-            "text_color": "black",
-            "icon_1": "icon-box",
-            "heading_1": "Title",
-            "text_1": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
-            "block_custom_class": ""
-          }
-        },
-        "6cf037b7-d2cc-4c07-98cd-fa5700b1b8f9": {
-          "type": "text",
-          "settings": {
-            "title": "Talk about your brand",
-            "subheading": "",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -174,16 +146,15 @@
         }
       },
       "block_order": [
-        "template--16672375439584__031d3cff-418b-4027-a9c1-d901aa9c90d5-166740258403331dfc-0",
-        "7e4191fb-c664-4281-8d4c-a909772d7626",
-        "a04d9de4-c1e1-4663-a665-430796b21f17",
-        "27a330c5-d5aa-46ae-a512-831b0609a85d",
-        "6cf037b7-d2cc-4c07-98cd-fa5700b1b8f9"
+        "template--16672375439584__3d41e460-7989-4f8a-9511-332f17ae284f-16674059616fd68417-0",
+        "b83974ac-2993-4c00-8a92-3552a941a3af",
+        "ae9226cf-8df2-445d-a7c1-35c0a89b8fca",
+        "b0d9c1c9-a254-4709-af25-bc9fa6ad9da3"
       ],
       "settings": {
         "heading": "D33 Content List",
         "subheading": "",
-        "description": "asdasdas",
+        "description": "",
         "header_alignment": "center",
         "container": "container-fluid",
         "background_color": "",
@@ -880,7 +851,7 @@
   },
   "order": [
     "1621243260e1af0c20",
-    "031d3cff-418b-4027-a9c1-d901aa9c90d5",
+    "3d41e460-7989-4f8a-9511-332f17ae284f",
     "16225316461d1cff80",
     "b92a568a-9c9f-45db-842f-34d6086e46a8",
     "0378bc53-d31a-49e9-941e-0d3ea20443b5",
