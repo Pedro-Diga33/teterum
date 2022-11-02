@@ -197,30 +197,17 @@
             "icon_1": "icon-people",
             "heading_1": "Titleasdaskdjhasdñks",
             "text_1": "<p>Empaquetado por personas con TEA<br\/>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.asdasdsada<\/p>",
-            "icon_2": "icon-ball",
-            "heading_2": "",
-            "text_2": "<p>Empaquetado por personas con TEA<br\/>Mejoramos la vida de chicos y chicas con (dis)capacidad, potenciando sus dones.<\/p>",
-            "icon_3": "icon-box",
-            "heading_3": "",
-            "text_3": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_label": "",
             "button_link": "",
             "button_style": "sf__btn-primary",
             "button_size": "",
             "block_custom_class": ""
           }
-        },
-        "ba5979e7-c453-4480-afa8-30ef97c82cac": {
-          "type": "text_content",
-          "settings": {
-            "icon_1": "icon-ball"
-          }
         }
       },
       "block_order": [
         "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-1",
-        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-0",
-        "ba5979e7-c453-4480-afa8-30ef97c82cac"
+        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-0"
       ],
       "settings": {
         "heading": "",
