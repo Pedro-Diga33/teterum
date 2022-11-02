@@ -172,6 +172,56 @@
         "enable_slider": true
       }
     },
+    "55318260-ec2a-419b-b131-281180d7d71a": {
+      "type": "d33-product-certificate",
+      "blocks": {
+        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-1": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-0": {
+          "type": "text",
+          "settings": {
+            "title": "Orgullosamente BCorp",
+            "subheading": "Somos el primer y único té certificado Bcorp en España. Esto asegura que trabajamos sin cargarnos el planeta y las personas.",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-1",
+        "template--16672375767264__55318260-ec2a-419b-b131-281180d7d71a-16673776024f45d8c5-0"
+      ],
+      "settings": {
+        "heading": "D33 Product Certificate",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
     "459f7585-182b-4f30-bfbd-c8fadd21a25c": {
       "type": "custom-content",
       "blocks": {
@@ -230,6 +280,7 @@
     "363303ed-31e2-4b25-a95e-128f8b1ade80",
     "product-details-tabs",
     "product-recommendations",
+    "55318260-ec2a-419b-b131-281180d7d71a",
     "459f7585-182b-4f30-bfbd-c8fadd21a25c"
   ]
 }
