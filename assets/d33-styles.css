@@ -95,3 +95,10 @@ body .heroSlider .container-fluid  .swiper-pagination {
 .d33-custom-list-icons .d33-icon-content div p {
     margin: 0;
 }
+
+body .color-coral {
+    color: #FF6163;
+}
+body .bg-coral {
+    background-color: #FF6163;
+}
