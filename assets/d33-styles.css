@@ -108,3 +108,12 @@ body .color-coral {
 body .bg-coral {
     background-color: #FF6163;
 }
+body .icon.color-coral {
+    opacity: 0.3;
+}
+
+.add-to-cart .atc-text:after {
+    content: '\e900';
+    font-family: 'd33icons';
+    margin-left: 20px;
+}
