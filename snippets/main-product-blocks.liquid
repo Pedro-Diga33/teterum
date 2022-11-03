@@ -55,6 +55,9 @@
     data-enable-history-state="{{ section.settings.enable_history_state }}"
     data-enable-video-autoplay="{{ section.settings.enable_video_autoplay }}">
     <div class="main-product__blocks">
+      {% if section.settings.show_tags == true %}
+        {% render 'd33-product-tags' product: product %}
+      {% endif %}
       {%- for block in section.blocks -%}
         <div class="main-product__block main-product__block-{{ block.type }}" {{ block.shopify_attributes }}>
           {%- case block.type -%}
