@@ -76,6 +76,7 @@
           "type": "text",
           "settings": {
             "width": "100%",
+            "icon_color": "black",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -83,10 +84,6 @@
             "icon_1": "",
             "heading_1": "",
             "text_1": "<p>Esto es lo que sucede cuando el cliente de tu negocio pida una infusión o té:<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
             "block_custom_class": ""
           }
         },
@@ -94,6 +91,7 @@
           "type": "text",
           "settings": {
             "width": "100%",
+            "icon_color": "black",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -101,10 +99,6 @@
             "icon_1": "",
             "heading_1": "Sobre de papel kraft reciclado y reciclable",
             "text_1": "<p>Con un diseño que deja claro el compromiso con el medioambiente y el carácter artesanal de ese té.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
             "block_custom_class": ""
           }
         },
@@ -112,6 +106,7 @@
           "type": "text",
           "settings": {
             "width": "100%",
+            "icon_color": "black",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -119,10 +114,6 @@
             "icon_1": "",
             "heading_1": "Title sin icono ni descripcion",
             "text_1": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
             "block_custom_class": ""
           }
         },
@@ -130,6 +121,7 @@
           "type": "text",
           "settings": {
             "width": "100%",
+            "icon_color": "coral",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -137,10 +129,6 @@
             "icon_1": "icon-navigatiobn",
             "heading_1": "",
             "text_1": "<p>Se pueden apreciar las hojas, flores y frutas de esa infusión.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
             "block_custom_class": ""
           }
         },
@@ -148,6 +136,7 @@
           "type": "text",
           "settings": {
             "width": "100%",
+            "icon_color": "black",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -155,10 +144,6 @@
             "icon_1": "icon-edit",
             "heading_1": "Tarjeta firmada",
             "text_1": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
             "block_custom_class": ""
           }
         },
@@ -166,6 +151,7 @@
           "type": "text",
           "settings": {
             "width": "100%",
+            "icon_color": "black",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -173,10 +159,6 @@
             "icon_1": "icon-heart",
             "heading_1": "Delicioso té de calidad gourmet",
             "text_1": "<p>Por último, saboreará un té bien tratado y conservado. Algo que se nota en su sabor y olor a pesar de ser pirámide. Ya que nosotros no usamos tés de menor calidad para las pirámides. Son exactamente los mismos tés que en el formato a granel minorista.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
             "block_custom_class": ""
           }
         },
@@ -184,6 +166,7 @@
           "type": "text",
           "settings": {
             "width": "100%",
+            "icon_color": "black",
             "alignment": "center",
             "align_text": "left",
             "text_size": "medium",
@@ -191,10 +174,6 @@
             "icon_1": "icon-like",
             "heading_1": "Experiencia sabrosa y placentera",
             "text_1": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
             "block_custom_class": ""
           }
         }
