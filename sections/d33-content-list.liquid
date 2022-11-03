@@ -72,21 +72,21 @@
                     <div class="sf-custom__block-inner w-full">
                         {% case block.type %}
                             {% when 'text' %}
-                                <div class="text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="--text-color: {{ block.settings.text_color }};">
+                                <div class="text-{{ block.settings.align_text }}{% if section.settings.container == 'w-full' %} px-4 md:px-0{% endif %}" style="olor: {{ block.settings.text_color }};">
                                     <div class="d33-custom-list-icons d33-content-list-icons flex flex-row">
                                       {% if block.settings.icon_1 != blank %}
-                                        <div class="d33-icon" style="--text-color: {{ block.settings.icon_color }};">
-                                          <span class="icon {{ block.settings.icon_1 }}"></span>
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_1 }} color-{{ block.settings.icon_color }}"></span>
                                         </div>
                                       {% endif %}
                                       <div class="d33-icon-content">
                                         {% if block.settings.heading_1 != blank %}
-                                          <h4 style="--text-color: {{ block.settings.text_color }};">
+                                          <h4 style="color: {{ block.settings.text_color }};">
                                             {{ block.settings.heading_1 }}
                                           </h4>
                                         {% endif %}
                                         {% if block.settings.text_1 != blank %}
-                                          <div class="prose rte text-color-subtext" style="--text-color: {{ block.settings.text_color }};">
+                                          <div class="prose rte text-color-subtext" style="color: {{ block.settings.text_color }};">
                                             {{ block.settings.text_1 }}
                                           </div>
                                         {% endif %}

@@ -96,6 +96,12 @@ body .heroSlider .container-fluid  .swiper-pagination {
     margin: 0;
 }
 
+body .color-white {
+    color: white;
+}
+body .color-black {
+    color: black;
+}
 body .color-coral {
     color: #FF6163;
 }
