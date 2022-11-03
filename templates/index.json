@@ -72,7 +72,7 @@
     "3d41e460-7989-4f8a-9511-332f17ae284f": {
       "type": "d33-content-list",
       "blocks": {
-        "template--16672375439584__3d41e460-7989-4f8a-9511-332f17ae284f-16674059616fd68417-0": {
+        "d64ed987-0a4e-423f-84fa-e751b6324cb7": {
           "type": "text",
           "settings": {
             "width": "100%",
@@ -81,8 +81,44 @@
             "text_size": "medium",
             "text_color": "black",
             "icon_1": "icon-mail",
+            "heading_1": "",
+            "text_1": "<p>Esto es lo que sucede cuando el cliente de tu negocio pida una infusión o té:<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "template--16672375439584__3d41e460-7989-4f8a-9511-332f17ae284f-16674059616fd68417-0": {
+          "type": "text",
+          "settings": {
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "icon_1": "",
             "heading_1": "Sobre de papel kraft reciclado y reciclable",
             "text_1": "<p>Con un diseño que deja claro el compromiso con el medioambiente y el carácter artesanal de ese té.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "dcc0ee5d-d1ec-4cf5-a3a7-5351d1c309e9": {
+          "type": "text",
+          "settings": {
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "icon_1": "",
+            "heading_1": "Title sin icono ni descripcion",
+            "text_1": "",
             "button_label": "",
             "button_link": "",
             "button_style": "sf__btn-primary",
@@ -99,7 +135,7 @@
             "text_size": "medium",
             "text_color": "black",
             "icon_1": "icon-navigatiobn",
-            "heading_1": "Dentro una bonita pirámide",
+            "heading_1": "",
             "text_1": "<p>Se pueden apreciar las hojas, flores y frutas de esa infusión.<\/p>",
             "button_label": "",
             "button_link": "",
@@ -118,7 +154,7 @@
             "text_color": "black",
             "icon_1": "icon-edit",
             "heading_1": "Tarjeta firmada",
-            "text_1": "<p>Encontrará la tarjeta firmada por la persona que ha preparado ese té en un centro de inserción laboral para personas con discapacidad. Con el mensaje que hay en la tarjeta será consciente de la aportación social de ese té.<\/p>",
+            "text_1": "",
             "button_label": "",
             "button_link": "",
             "button_style": "sf__btn-primary",
@@ -161,38 +197,21 @@
             "button_size": "",
             "block_custom_class": ""
           }
-        },
-        "d64ed987-0a4e-423f-84fa-e751b6324cb7": {
-          "type": "text",
-          "settings": {
-            "width": "100%",
-            "alignment": "center",
-            "align_text": "left",
-            "text_size": "medium",
-            "text_color": "black",
-            "icon_1": "icon-heart",
-            "heading_1": "Saludable",
-            "text_1": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
-            "block_custom_class": ""
-          }
         }
       },
       "block_order": [
+        "d64ed987-0a4e-423f-84fa-e751b6324cb7",
         "template--16672375439584__3d41e460-7989-4f8a-9511-332f17ae284f-16674059616fd68417-0",
+        "dcc0ee5d-d1ec-4cf5-a3a7-5351d1c309e9",
         "b83974ac-2993-4c00-8a92-3552a941a3af",
         "ae9226cf-8df2-445d-a7c1-35c0a89b8fca",
         "b0d9c1c9-a254-4709-af25-bc9fa6ad9da3",
-        "4f9ad153-a179-4ad4-9722-e2f5d343cb4f",
-        "d64ed987-0a4e-423f-84fa-e751b6324cb7"
+        "4f9ad153-a179-4ad4-9722-e2f5d343cb4f"
       ],
       "settings": {
         "heading": "¿Cómo es la experiencia  del cliente final?",
         "subheading": "",
-        "description": "Esto es lo que sucede cuando el cliente de tu negocio pida una infusión o té:",
+        "description": "",
         "header_alignment": "center",
         "description_alignment": "left",
         "container": "container-fluid",
@@ -208,6 +227,13 @@
     "16225316461d1cff80": {
       "type": "collection-list",
       "blocks": {
+        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "sneakers",
+            "title": "Sneakers"
+          }
+        },
         "16225316461d1cff80-1": {
           "type": "collection_block",
           "settings": {
@@ -250,13 +276,6 @@
             "title": "Glasses"
           }
         },
-        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "sneakers",
-            "title": "Sneakers"
-          }
-        },
         "65e38235-f03b-43c9-8590-38c9c656e51c": {
           "type": "collection_block",
           "settings": {
@@ -266,13 +285,13 @@
         }
       },
       "block_order": [
+        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec",
         "16225316461d1cff80-1",
         "16225316461d1cff80-2",
         "7a571158-7686-4e66-a693-4716fc905604",
         "12985deb-0775-45ce-80f6-6be7f3150a91",
         "07ebf095-1da2-4546-87f3-97e73a789e8d",
         "694c01c9-a95f-4c09-9cf0-ec75f0131e98",
-        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec",
         "65e38235-f03b-43c9-8590-38c9c656e51c"
       ],
       "settings": {
