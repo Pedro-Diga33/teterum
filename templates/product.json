@@ -93,6 +93,7 @@
         "container": "container-fluid",
         "layout": "layout-6",
         "show_atwl": true,
+        "show_tags": false,
         "enable_history_state": true,
         "enable_variant_group_images": true,
         "show_featured_media": true,
