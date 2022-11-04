@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'd33icons';
-  src:  url('d33icons.eot?5ae2cn');
-  src:  url('d33icons.eot?5ae2cn#iefix') format('embedded-opentype'),
-    url('d33icons.ttf?5ae2cn') format('truetype'),
-    url('d33icons.woff?5ae2cn') format('woff'),
-    url('d33icons.svg?5ae2cn#d33icons') format('svg');
+  src:  url('d33icons.eot?inkjyi');
+  src:  url('d33icons.eot?inkjyi#iefix') format('embedded-opentype'),
+    url('d33icons.ttf?inkjyi') format('truetype'),
+    url('d33icons.woff?inkjyi') format('woff'),
+    url('d33icons.svg?inkjyi#d33icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar:before {
+  content: "\e90c";
+}
+.icon-leaf:before {
+  content: "\e90d";
+}
+.icon-Arrow-right:before {
+  content: "\e90e";
+}
+.icon-Contacts:before {
+  content: "\e90f";
+}
+.icon-Search:before {
+  content: "\e910";
+}
+.icon-Shopping-cart:before {
+  content: "\e911";
+}
 .icon-box:before {
   content: "\e900";
 }
