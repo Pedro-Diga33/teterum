@@ -87,39 +87,133 @@
                                         <p class="mb-5 content__subheading text-{{ block.settings.text_color }}">{{ block.settings.subheading }}</p>
                                     {% endif %}
 
-                                    {% if block.settings.heading_1 != blank %}
-                                        <div class="d33-custom-list-icons flex flex-row">
-                                          <div class="d33-icon">
-                                            <span class="icon {{ block.settings.icon_1 }}"></span>
-                                          </div>
-                                          <div class="d33-icon-content">
-                                            <h4>{{ block.settings.heading_1 }} </h4>
-                                            <div class="prose rte text-color-subtext">{{ block.settings.text_1 }}</div>
-                                          </div>
-                                        </div>
-                                    {% endif %}
-                                    {% if block.settings.heading_2 != blank %}
-                                      <div class="d33-custom-list-icons flex flex-row">
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_1 != blank %}
                                         <div class="d33-icon">
-                                          <span class="icon {{ block.settings.icon_2 }}"></span>
+                                          <span class="icon {{ block.settings.icon_1 }} color-{{ block.settings.icon_color }}"></span>
                                         </div>
-                                        <div class="d33-icon-content">
-                                          <h4>{{ block.settings.heading_2 }} </h4>
-                                          <div class="prose rte text-color-subtext">{{ block.settings.text_2 }}</div>
-                                        </div>
-                                      </div>
-                                  {% endif %}
-                                  {% if block.settings.heading_3 != blank %}
-                                    <div class="d33-custom-list-icons flex flex-row">
-                                      <div class="d33-icon">
-                                        <span class="icon {{ block.settings.icon_3 }}"></span>
-                                      </div>
+                                      {% endif %}
                                       <div class="d33-icon-content">
-                                        <h4>{{ block.settings.heading_3 }} </h4>
-                                        <div class="prose rte text-color-subtext">{{ block.settings.text_3 }}</div>
+                                        {% if block.settings.heading_1 != blank %}
+                                          <h4>{{ block.settings.heading_1 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_1 }}</div>
+                                        {% endif %}
                                       </div>
                                     </div>
-                                {% endif %}
+                                    
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_2 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_2 }} color-{{ block.settings.icon_color }}"></span>
+                                        </div>
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_2 != blank %}
+                                          <h4>{{ block.settings.heading_2 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_2 }}</div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_3 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_3 }} color-{{ block.settings.icon_color }}"></span>
+                                        </div>
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_3 != blank %}
+                                          <h4>{{ block.settings.heading_3 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_3 }}</div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_4 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_4 }} color-{{ block.settings.icon_color }}"></span>
+                                        </div>
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_4 != blank %}
+                                          <h4>{{ block.settings.heading_4 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_4 }}</div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_5 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_5 }} color-{{ block.settings.icon_color }}"></span>
+                                        </div>
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_5 != blank %}
+                                          <h4>{{ block.settings.heading_5 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_5 }}</div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_6 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_6 }} color-{{ block.settings.icon_color }}"></span>
+                                        </div>
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_6 != blank %}
+                                          <h4>{{ block.settings.heading_6 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_6 }}</div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_7 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_7 }} color-{{ block.settings.icon_color }}"></span>
+                                        </div>
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_7 != blank %}
+                                          <h4>{{ block.settings.heading_7 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_7 }}</div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+
+                                    <div class="d33-custom-list-icons flex flex-row" style="padding-top: {{ block.settings.padding_top_list }}px;padding-bottom: {{ block.settings.padding_bottom_list }}px;">
+                                      {% if block.settings.icon_8 != blank %}
+                                        <div class="d33-icon">
+                                          <span class="icon {{ block.settings.icon_8 }} color-{{ block.settings.icon_color }}"></span>
+                                        </div>
+                                      {% endif %}
+                                      <div class="d33-icon-content">
+                                        {% if block.settings.heading_8 != blank %}
+                                          <h4>{{ block.settings.heading_8 }} </h4>
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                          <div class="prose rte text-color-subtext">{{ block.settings.text_8 }}</div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
 
                                     {% if block.settings.button_label != blank %}
                                         <div class="sf-custom__text-cta mt-5 md:mt-8">
@@ -714,8 +808,65 @@
           "default": "medium"
         },
         {
+          "type": "select",
+          "id": "icon_color",
+          "label": "Icon color",
+          "options": [
+            {
+              "value": "white",
+              "label": "Light"
+            },
+            {
+              "value": "black",
+              "label": "Dark"
+            },
+            {
+              "value": "coral",
+              "label": "Coral"
+            },
+            {
+              "value": "coral-opacity",
+              "label": "Coral Opacity"
+            },
+            {
+              "value": "yellow",
+              "label": "yellow"
+            },
+            {
+              "value": "yellow-opacity",
+              "label": "yellow Opacity"
+            }
+          ],
+          "default": "black"
+        },
+        {
           "type": "header",
-          "content": "Content"
+          "content": "Padding lists"
+        },
+        {
+          "type": "range",
+          "id": "padding_top_list",
+          "label": "Padding Top",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom_list",
+          "label": "Padding Bottom",
+          "default": 30,
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px"
+        },
+
+        {
+          "type": "header",
+          "content": "Content list 1"
         },
         {
           "type": "select",
@@ -758,6 +909,10 @@
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
         },
         {
+          "type": "header",
+          "content": "Content list 2"
+        },
+        {
           "type": "select",
           "id": "icon_2",
           "label": "Icons",
@@ -796,6 +951,10 @@
           "label": "Text"
         },
         {
+          "type": "header",
+          "content": "Content list 3"
+        },
+        {
           "type": "select",
           "id": "icon_3",
           "label": "Icons",
@@ -831,6 +990,216 @@
         {
           "type": "richtext",
           "id": "text_3",
+          "label": "Text"
+        },
+        {
+          "type": "header",
+          "content": "Content list 4"
+        },
+        {
+          "type": "select",
+          "id": "icon_4",
+          "label": "Icons",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Select Icon"
+            },
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-group",
+              "label": "group"
+            },
+            {
+              "value": "icon-world",
+              "label": "world"
+            },
+            {
+              "value": "icon-leaf",
+              "label": "Leaf"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_4",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text_4",
+          "label": "Text"
+        },
+        {
+          "type": "header",
+          "content": "Content list 5"
+        },
+        {
+          "type": "select",
+          "id": "icon_5",
+          "label": "Icons",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Select Icon"
+            },
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-group",
+              "label": "group"
+            },
+            {
+              "value": "icon-world",
+              "label": "world"
+            },
+            {
+              "value": "icon-leaf",
+              "label": "Leaf"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_5",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text_5",
+          "label": "Text"
+        },
+        {
+          "type": "header",
+          "content": "Content list 6"
+        },
+        {
+          "type": "select",
+          "id": "icon_6",
+          "label": "Icons",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Select Icon"
+            },
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-group",
+              "label": "group"
+            },
+            {
+              "value": "icon-world",
+              "label": "world"
+            },
+            {
+              "value": "icon-leaf",
+              "label": "Leaf"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_6",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text_6",
+          "label": "Text"
+        },
+        {
+          "type": "header",
+          "content": "Content list 7"
+        },
+        {
+          "type": "select",
+          "id": "icon_7",
+          "label": "Icons",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Select Icon"
+            },
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-group",
+              "label": "group"
+            },
+            {
+              "value": "icon-world",
+              "label": "world"
+            },
+            {
+              "value": "icon-leaf",
+              "label": "Leaf"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_7",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text_7",
+          "label": "Text"
+        },
+        {
+          "type": "header",
+          "content": "Content list 8"
+        },
+        {
+          "type": "select",
+          "id": "icon_8",
+          "label": "Icons",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Select Icon"
+            },
+            {
+              "value": "icon-box",
+              "label": "Box"
+            },
+            {
+              "value": "icon-group",
+              "label": "group"
+            },
+            {
+              "value": "icon-world",
+              "label": "world"
+            },
+            {
+              "value": "icon-leaf",
+              "label": "Leaf"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading_8",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text_8",
           "label": "Text"
         },
         {
