@@ -33,6 +33,21 @@
                     {{ block.settings.content_page.content }}
                   {% when 'liquid' %}
                     {{ block.settings.custom_liquid }}
+                    {% when 'd33-tab' %}
+                      
+                      <div class="flex flex-row justify-center d33-ingredients">
+                        {% for infredient_percent in product.metafields.custom.ingredientes_porcentaje.value -%}
+                        <div class="flex flex-col text-center">
+                            <div>
+                                {{ infredient_percent }}%
+                            </div>
+                            <div>
+                              {{ product.metafields.custom.ingredientes.value[forloop.index0] }}
+                            </div>
+                        </div>
+                      {%- endfor %}
+                      </div>
+                   
                   {% else %}
                 {% endcase %}
               </div>
@@ -83,7 +98,6 @@
       "default": true
     }
   ],
-  "max_blocks": 6,
   "blocks": [
     {
       "type": "description",
@@ -188,6 +202,19 @@
           "type": "liquid",
           "id": "custom_liquid",
           "label": "Custom liquid"
+        }
+      ]
+    },
+    {
+      "type": "d33-tab",
+      "name": "Ingredients Product",
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Tab heading",
+          "default": "Ingredientes",
+          "info": "La información es imprimida desde los metafields de ingredientes y ingredientes porcentaje"
         }
       ]
     }

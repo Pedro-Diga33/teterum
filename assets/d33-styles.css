@@ -119,3 +119,22 @@ body .color-yellow-opacity {
     font-family: 'd33icons';
     margin-left: 20px;
 }
+
+.d33-ingredients {
+    flex-wrap: wrap;
+}
+.d33-ingredients > div {
+    width: 25%;
+    padding: 30px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+.d33-ingredients > div > div {
+    font-size: 48px;
+    font-weight: 600;
+}
+.d33-ingredients > div > div + div {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    opacity: 0.7;
+}
